@@ -1,0 +1,308 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #d6dade;
+  color: #333;
+  margin: 0;
+}
+
+/* App Container */
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Header */
+header {
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 1.5rem;
+}
+
+header p {
+  color: #777;
+  margin-top: 5px;
+}
+
+/* Main Screen */
+.screen {
+  flex: 1;
+  padding: 20px;
+}
+
+.rooms {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.room-card {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: calc(33.33% - 20px);
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.room-card:hover {
+  background: #f1f3f4;
+  transform: translateY(-5px);
+}
+
+.room-icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.room-card h2 {
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+}
+
+.room-card p {
+  color: #555;
+  margin-bottom: 5px;
+}
+
+/* Room Detail Screen */
+#room-detail-screen {
+  display: none;
+}
+
+#room-detail-screen.active {
+  display: block;
+}
+
+.back-btn {
+  background: #f44336;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background 0.3s ease;
+}
+
+.back-btn:hover {
+  background: #d32f2f;
+}
+
+.room-info {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.room-info h2 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.room-info p {
+  margin-bottom: 5px;
+  color: #555;
+}
+
+/* Chart */
+.chart {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.chart h3 {
+  margin-bottom: 15px;
+}
+
+/* Devices Section */
+.devices {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.devices h3 {
+  margin-bottom: 15px;
+}
+
+.device {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.device:last-child {
+  margin-bottom: 0;
+}
+
+/* Toggle Button */
+.toggle-btn {
+  width: 50px;
+  height: 25px;
+  background: gray;
+  border-radius: 15px;
+  position: relative;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.toggle-btn .inner-circle {
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translate(0, -50%);
+  transition: left 0.3s ease;
+}
+
+.toggle-btn.active {
+  background: #21ecf3;
+}
+
+.toggle-btn.active .inner-circle {
+  left: 60%;
+}
+/* body {
+	font-family: 'Inter', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f9f9f9;
+	color: #333;
+  }
+  
+  .app {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+  }
+  
+  header {
+	background: #fff;
+	padding: 20px;
+	text-align: center;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  header h1 {
+	font-size: 1.5em;
+	margin: 0;
+  }
+  
+  header p {
+	margin: 5px 0 0;
+	font-size: 0.9em;
+	color: #777;
+  }
+  
+  main {
+	flex: 1;
+	overflow-y: auto;
+	padding: 20px;
+  }
+  
+  .rooms {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 20px;
+  }
+  
+  .room-card {
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	text-align: left;
+  }
+  
+  .room-card h2 {
+	font-size: 1.2em;
+	margin: 0 0 10px;
+  }
+  
+  .room-card p {
+	margin: 5px 0;
+  }
+  
+  .toggle {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 10px;
+  }
+  
+  .toggle-btn {
+	width: 50px;
+	height: 25px;
+	background: #ccc;
+	border-radius: 15px;
+	position: relative;
+	transition: background 0.3s;
+  }
+  
+  .toggle-btn .inner-circle {
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 5%;
+	transform: translateY(-50%);
+	transition: left 0.3s;
+  }
+  
+  .toggle-btn.active {
+	background: #4caf50;
+  }
+  
+  .toggle-btn.active .inner-circle {
+	left: 60%;
+  }
+  
+  .bottom-nav {
+	background: #fff;
+	box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+	display: flex;
+	justify-content: space-around;
+	padding: 10px 0;
+  }
+  
+  .nav-item {
+	font-size: 0.9em;
+	color: #777;
+	text-align: center;
+	flex: 1;
+	padding: 10px 0;
+  }
+  
+  .nav-item.active {
+	color: #4caf50;
+	font-weight: 600;
+  } */
+  
+  /* General Reset */
+
+/* style.css */
+/* General Reset */
