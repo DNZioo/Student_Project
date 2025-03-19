@@ -1,0 +1,690 @@
+etsRչ� 2016��:22�MSH�HH���0xLB�=]RON_��UQ�,boot:��7 (*�}MT_FL�*�%==Q)
+c�˥����: 0,�A%]A�0xee
+,k�E���0x00,\E���0x00,dߖ��0x�,cs0E���0A0,hdE���0x�,wp_���0x�j
+modY'T�	�����div:2
+�+��0x&���0&�len:S��j
+�+��0Q0078�0,le���j
+ho 0�����12 roo[�j
+l+��0x����,len�SHloᖂ��0�0404����39�
+en��0x��806�j
+[0;32mI (30) boot: ESP-IDF v5.3.1-395-g707d097b01 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Nov 26 2024 23:14:03[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=29f20h (171808) map[0m
+[0;32mI (163) esp_image: segment 1: paddr=00039f48 vaddr=3ffb0000 size=03f58h ( 16216) load[0m
+[0;32mI (170) esp_image: segment 2: paddr=0003dea8 vaddr=40080000 size=02170h (  8560) load[0m
+[0;32mI (173) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a6210h (680464) map[0m
+[0;32mI (411) esp_image: segment 4: paddr=000e6238 vaddr=40082170 size=152e8h ( 86760) load[0m
+[0;32mI (457) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (457) boot: Disabling RNG early entropy source...[0m
+[0;32mI (469) cpu_start: Multicore app[0m
+[0;32mI (478) cpu_start: Pro cpu start user code[0m
+[0;32mI (478) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (478) app_init: Application information:[0m
+[0;32mI (481) app_init: Project name:     https_firebase_testing[0m
+[0;32mI (487) app_init: App version:      1[0m
+[0;32mI (492) app_init: Compile time:     Jan 30 2025 15:01:22[0m
+[0;32mI (498) app_init: ELF file SHA256:  3047354a4...[0m
+[0;32mI (503) app_init: ESP-IDF:          v5.3.1-395-g707d097b01[0m
+[0;32mI (509) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (514) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (519) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (524) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (531) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (537) heap_init: At 3FFB87C0 len 00027840 (158 KiB): DRAM[0m
+[0;32mI (543) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (549) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (556) heap_init: At 40097458 len 00008BA8 (34 KiB): IRAM[0m
+[0;32mI (564) spi_flash: detected chip: generic[0m
+[0;32mI (567) spi_flash: flash io: dio[0m
+[0;33mW (571) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (584) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (595) main_task: Started on CPU0[0m
+[0;32mI (605) main_task: Calling app_main()[0m
+[0;32mI (625) example_connect: Start example_connect.[0m
+[0;32mI (635) wifi:wifi driver task: 3ffc047c, prio:23, stack:6656, core=0[0m
+[0;32mI (645) wifi:wifi firmware version: 6f4dea5[0m
+[0;32mI (645) wifi:wifi certification version: v7.0[0m
+[0;32mI (645) wifi:config NVS flash: enabled[0m
+[0;32mI (645) wifi:config nano formating: disabled[0m
+[0;32mI (645) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (655) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (655) wifi:Init management short buffer num: 32[0m
+[0;32mI (665) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (665) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (675) wifi:Init static rx buffer num: 10[0m
+[0;32mI (675) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (675) wifi_init: rx ba win: 6[0m
+[0;32mI (685) wifi_init: accept mbox: 6[0m
+[0;32mI (685) wifi_init: tcpip mbox: 32[0m
+[0;32mI (685) wifi_init: udp mbox: 6[0m
+[0;32mI (695) wifi_init: tcp mbox: 6[0m
+[0;32mI (695) wifi_init: tcp tx win: 5760[0m
+[0;32mI (705) wifi_init: tcp rx win: 5760[0m
+[0;32mI (705) wifi_init: tcp mss: 1440[0m
+[0;32mI (705) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (715) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (725) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+[0;32mI (805) wifi:mode : sta (4c:11:ae:65:b6:10)[0m
+[0;32mI (805) wifi:enable tsf[0m
+[0;32mI (815) example_connect: Connecting to DNZio...[0m
+[0;33mW (815) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (825) example_connect: Waiting for IP(s)[0m
+[0;32mI (3235) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (5645) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (8065) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (10475) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (12885) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (15305) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (15305) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (16585) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (16605) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (17185) wifi:state: run -> init (0x2c0)[0m
+[0;32mI (17185) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (17185) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (19605) example_connect: WiFi Connect failed 7 times, stop reconnect.[0m
+
+assert failed: spinlock_acquire spinlock.h:142 (lock->count == 0)
+
+
+Backtrace: 0x40081a76:0x3ffba6e0 0x400895a1:0x3ffba700 0x40091389:0x3ffba720 0x4008a372:0x3ffba840 0x40089f1c:0x3ffba870 0x400d863c:0x3ffba8b0 0x400d8823:0x3ffba8d0 0x400d8117:0x3ffbaa70 0x400d7b91:0x3ffbaa90 0x40174243:0x3ffbaac0 0x4008a0ed:0x3ffbaaf0
+
+
+
+
+ELF file SHA256: 3047354a4
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-395-g707d097b01 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 26 2024 23:14:03[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v1.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=29f20h (171808) map[0m
+[0;32mI (164) esp_image: segment 1: paddr=00039f48 vaddr=3ffb0000 size=03f58h ( 16216) load[0m
+[0;32mI (171) esp_image: segment 2: paddr=0003dea8 vaddr=40080000 size=02170h (  8560) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a6210h (680464) map[0m
+[0;32mI (412) esp_image: segment 4: paddr=000e6238 vaddr=40082170 size=152e8h ( 86760) load[0m
+[0;32mI (458) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (458) boot: Disabling RNG early entropy source...[0m
+[0;32mI (470) cpu_start: Multicore app[0m
+[0;32mI (479) cpu_start: Pro cpu start user code[0m
+[0;32mI (479) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (479) app_init: Application information:[0m
+[0;32mI (482) app_init: Project name:     https_firebase_testing[0m
+[0;32mI (488) app_init: App version:      1[0m
+[0;32mI (493) app_init: Compile time:     Jan 30 2025 15:01:22[0m
+[0;32mI (499) app_init: ELF file SHA256:  3047354a4...[0m
+[0;32mI (504) app_init: ESP-IDF:          v5.3.1-395-g707d097b01[0m
+[0;32mI (510) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (515) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (520) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (525) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (532) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (538) heap_init: At 3FFB87C0 len 00027840 (158 KiB): DRAM[0m
+[0;32mI (544) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (550) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (557) heap_init: At 40097458 len 00008BA8 (34 KiB): IRAM[0m
+[0;32mI (565) spi_flash: detected chip: generic[0m
+[0;32mI (568) spi_flash: flash io: dio[0m
+[0;33mW (572) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (585) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (596) main_task: Started on CPU0[0m
+[0;32mI (606) main_task: Calling app_main()[0m
+[0;32mI (626) example_connect: Start example_connect.[0m
+[0;32mI (636) wifi:wifi driver task: 3ffc047c, prio:23, stack:6656, core=0[0m
+[0;32mI (646) wifi:wifi firmware version: 6f4dea5[0m
+[0;32mI (646) wifi:wifi certification version: v7.0[0m
+[0;32mI (646) wifi:config NVS flash: enabled[0m
+[0;32mI (646) wifi:config nano formating: disabled[0m
+[0;32mI (646) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (656) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (656) wifi:Init management short buffer num: 32[0m
+[0;32mI (666) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (666) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (676) wifi:Init static rx buffer num: 10[0m
+[0;32mI (676) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (676) wifi_init: rx ba win: 6[0m
+[0;32mI (686) wifi_init: accept mbox: 6[0m
+[0;32mI (686) wifi_init: tcpip mbox: 32[0m
+[0;32mI (686) wifi_init: udp mbox: 6[0m
+[0;32mI (696) wifi_init: tcp mbox: 6[0m
+[0;32mI (696) wifi_init: tcp tx win: 5760[0m
+[0;32mI (706) wifi_init: tcp rx win: 5760[0m
+[0;32mI (706) wifi_init: tcp mss: 1440[0m
+[0;32mI (706) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (716) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (726) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+[0;32mI (806) wifi:mode : sta (4c:11:ae:65:b6:10)[0m
+[0;32mI (806) wifi:enable tsf[0m
+[0;32mI (816) example_connect: Connecting to DNZio...[0m
+[0;33mW (816) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (826) example_connect: Waiting for IP(s)[0m
+[0;32mI (3236) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3236) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (4516) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (4526) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (4626) wifi:connected with DNZio, aid = 1, channel 6, BW20, bssid = fa:bb:ef:fe:6b:d4[0m
+[0;32mI (4636) wifi:security: WPA3-SAE, phy: bgn, rssi: -51[0m
+[0;32mI (4636) wifi:pm start, type: 1[0m
+
+[0;32mI (4636) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (4696) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (5156) wifi:<ba-add>idx:0 (ifx:0, fa:bb:ef:fe:6b:d4), tid:0, ssn:2, winSize:64[0m
+[0;32mI (6146) esp_netif_handlers: example_netif_sta ip: 172.20.10.5, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (6146) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 172.20.10.5[0m
+[0;32mI (6626) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:4e11:aeff:fe65:b610, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (6626) example_common: Connected to example_netif_sta[0m
+[0;32mI (6636) example_common: - IPv4 address: 172.20.10.5,[0m
+[0;32mI (6636) example_common: - IPv6 address: fe80:0000:0000:0000:4e11:aeff:fe65:b610, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (6676) DHT_SENSOR: Humidity: 45.1%, Temp: 29.6C[0m
+[0;32mI (6686) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (6686) gpio: GPIO[19]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (6696) gpio: GPIO[23]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (8826) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (8826) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (9136) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=37, data={"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (9136) HTTP_CLIENT: HTTP GET status: 200[0m
+[0;32mI (9146) BUTTON: Received button states: {"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (9146) BUTTON: Button1: 0, Button2: 0, Button3: 0[0m
+[0;32mI (9316) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=62, data={"humidity":45.0999984741211,"temperature":29.600000381469727}[0m
+[0;32mI (9316) HTTP_CLIENT: HTTP POST status: 200[0m
+[0;32mI (9326) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (10346) DHT_SENSOR: Humidity: 47.3%, Temp: 28.9C[0m
+[0;32mI (11596) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (11976) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=37, data={"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (11986) HTTP_CLIENT: HTTP GET status: 200[0m
+[0;32mI (11986) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (11986) BUTTON: Received button states: {"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (11996) BUTTON: Button1: 0, Button2: 0, Button3: 0[0m
+[0;32mI (12586) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=63, data={"humidity":47.29999923706055,"temperature":28.899999618530273}[0m
+[0;32mI (12586) HTTP_CLIENT: HTTP POST status: 200[0m
+[0;32mI (12606) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (13626) DHT_SENSOR: Humidity: 47.3%, Temp: 28.9C[0m
+[0;32mI (14846) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (15156) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=37, data={"button1":1,"button2":0,"button3":0}[0m
+[0;32mI (15166) HTTP_CLIENT: HTTP GET status: 200[0m
+[0;32mI (15166) BUTTON: Received button states: {"button1":1,"button2":0,"button3":0}[0m
+[0;32mI (15176) BUTTON: Button1: 1, Button2: 0, Button3: 0[0m
+[0;32mI (15366) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (15766) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=63, data={"humidity":47.29999923706055,"temperature":28.899999618530273}[0m
+[0;32mI (15766) HTTP_CLIENT: HTTP POST status: 200[0m
+[0;32mI (15776) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (16796) DHT_SENSOR: Humidity: 47.4%, Temp: 28.9C[0m
+[0;32mI (17826) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (18156) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=37, data={"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (18156) HTTP_CLIENT: HTTP GET status: 200[0m
+[0;32mI (18166) BUTTON: Received button states: {"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (18166) BUTTON: Button1: 0, Button2: 0, Button3: 0[0m
+[0;32mI (18436) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (19056) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=62, data={"humidity":47.4000015258789,"temperature":28.899999618530273}[0m
+[0;32mI (19056) HTTP_CLIENT: HTTP POST status: 200[0m
+[0;32mI (19066) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (20086) DHT_SENSOR: Humidity: 47.3%, Temp: 29.0C[0m
+[0;32mI (21296) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (21706) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (21706) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=37, data={"button1":1,"button2":0,"button3":0}[0m
+[0;32mI (21706) HTTP_CLIENT: HTTP GET status: 200[0m
+[0;32mI (21716) BUTTON: Received button states: {"button1":1,"button2":0,"button3":0}[0m
+[0;32mI (21726) BUTTON: Button1: 1, Button2: 0, Button3: 0[0m
+[0;32mI (22216) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=47, data={"humidity":47.29999923706055,"temperature":29}[0m
+[0;32mI (22216) HTTP_CLIENT: HTTP POST status: 200[0m
+[0;32mI (22226) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (23246) DHT_SENSOR: Humidity: 47.3%, Temp: 29.0C[0m
+[0;32mI (24396) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (24886) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=37, data={"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (24886) HTTP_CLIENT: HTTP GET status: 200[0m
+[0;32mI (24886) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (24896) BUTTON: Received button states: {"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (24906) BUTTON: Button1: 0, Button2: 0, Button3: 0[0m
+[0;32mI (25796) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=47, data={"humidity":47.29999923706055,"temperature":29}[0m
+[0;32mI (25796) HTTP_CLIENT: HTTP POST status: 200[0m
+[0;32mI (25806) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (26836) DHT_SENSOR: Humidity: 47.3%, Temp: 29.0C[0m
+[0;32mI (27746) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (28056) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=37, data={"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (28056) HTTP_CLIENT: HTTP GET status: 200[0m
+[0;32mI (28066) BUTTON: Received button states: {"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (28066) BUTTON: Button1: 0, Button2: 0, Button3: 0[0m
+[0;32mI (28666) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (29386) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=47, data={"humidity":47.29999923706055,"temperature":29}[0m
+[0;32mI (29386) HTTP_CLIENT: HTTP POST status: 200[0m
+[0;32mI (29396) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (30416) DHT_SENSOR: Humidity: 47.3%, Temp: 29.0C[0m
+[0;32mI (30616) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (31236) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=37, data={"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (31236) HTTP_CLIENT: HTTP GET status: 200[0m
+[0;32mI (31246) BUTTON: Received button states: {"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (31246) BUTTON: Button1: 0, Button2: 0, Button3: 0[0m
+[0;32mI (32306) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (33276) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=47, data={"humidity":47.29999923706055,"temperature":29}[0m
+[0;32mI (33286) HTTP_CLIENT: HTTP POST status: 200[0m
+[0;32mI (33296) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (34096) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (34316) DHT_SENSOR: Humidity: 47.2%, Temp: 29.0C[0m
+[0;32mI (34506) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=37, data={"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (34506) HTTP_CLIENT: HTTP GET status: 200[0m
+[0;32mI (34516) BUTTON: Received button states: {"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (34516) BUTTON: Button1: 0, Button2: 0, Button3: 0[0m
+[0;32mI (35846) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (36666) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=47, data={"humidity":47.20000076293945,"temperature":29}[0m
+[0;32mI (36666) HTTP_CLIENT: HTTP POST status: 200[0m
+[0;32mI (36676) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (37176) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (37696) DHT_SENSOR: Humidity: 47.2%, Temp: 29.0C[0m
+[0;32mI (37716) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=37, data={"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (37716) HTTP_CLIENT: HTTP GET status: 200[0m
+[0;32mI (37726) BUTTON: Received button states: {"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (37736) BUTTON: Button1: 0, Button2: 0, Button3: 0[0m
+[0;32mI (40036) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (40856) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (40856) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=47, data={"humidity":47.20000076293945,"temperature":29}[0m
+[0;32mI (40866) HTTP_CLIENT: HTTP POST status: 200[0m
+[0;32mI (40876) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (41586) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=37, data={"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (41586) HTTP_CLIENT: HTTP GET status: 200[0m
+[0;32mI (41596) BUTTON: Received button states: {"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (41596) BUTTON: Button1: 0, Button2: 0, Button3: 0[0m
+[0;32mI (41896) DHT_SENSOR: Humidity: 47.2%, Temp: 29.0C[0m
+[0;32mI (43746) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (44126) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=47, data={"humidity":47.20000076293945,"temperature":29}[0m
+[0;32mI (44136) HTTP_CLIENT: HTTP POST status: 200[0m
+[0;32mI (44146) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (44236) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (44656) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=37, data={"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (44666) HTTP_CLIENT: HTTP GET status: 200[0m
+[0;32mI (44666) BUTTON: Received button states: {"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (44676) BUTTON: Button1: 0, Button2: 0, Button3: 0[0m
+[0;32mI (45166) DHT_SENSOR: Humidity: 47.2%, Temp: 29.0C[0m
+[0;32mI (46816) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (47516) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=47, data={"humidity":47.20000076293945,"temperature":29}[0m
+[0;32mI (47516) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (47526) HTTP_CLIENT: HTTP POST status: 200[0m
+[0;32mI (47536) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (48236) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=37, data={"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (48246) HTTP_CLIENT: HTTP GET status: 200[0m
+[0;32mI (48256) BUTTON: Received button states: {"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (48256) BUTTON: Button1: 0, Button2: 0, Button3: 0[0m
+[0;32mI (48556) DHT_SENSOR: Humidity: 47.1%, Temp: 29.0C[0m
+[0;32mI (50346) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (50786) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (50996) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=46, data={"humidity":47.0999984741211,"temperature":29}[0m
+[0;32mI (50996) HTTP_CLIENT: HTTP POST status: 200[0m
+[0;32mI (51006) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (51206) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=37, data={"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (51206) HTTP_CLIENT: HTTP GET status: 200[0m
+[0;32mI (51216) BUTTON: Received button states: {"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (51216) BUTTON: Button1: 0, Button2: 0, Button3: 0[0m
+[0;32mI (52026) DHT_SENSOR: Humidity: 47.2%, Temp: 29.1C[0m
+[0;32mI (53696) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (53766) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (54116) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=37, data={"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (54116) HTTP_CLIENT: HTTP GET status: 200[0m
+[0;32mI (54126) BUTTON: Received button states: {"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (54126) BUTTON: Button1: 0, Button2: 0, Button3: 0[0m
+[0;32mI (54176) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=63, data={"humidity":47.20000076293945,"temperature":29.100000381469727}[0m
+[0;32mI (54176) HTTP_CLIENT: HTTP POST status: 200[0m
+[0;32mI (54186) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (55216) DHT_SENSOR: Humidity: 47.2%, Temp: 29.1C[0m
+[0;32mI (56946) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (56946) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (57246) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=37, data={"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (57246) HTTP_CLIENT: HTTP GET status: 200[0m
+[0;32mI (57256) BUTTON: Received button states: {"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (57256) BUTTON: Button1: 0, Button2: 0, Button3: 0[0m
+[0;32mI (57456) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=63, data={"humidity":47.20000076293945,"temperature":29.100000381469727}[0m
+[0;32mI (57456) HTTP_CLIENT: HTTP POST status: 200[0m
+[0;32mI (57466) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (58486) DHT_SENSOR: Humidity: 47.2%, Temp: 29.0C[0m
+[0;32mI (59946) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (60326) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=37, data={"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (60326) HTTP_CLIENT: HTTP GET status: 200[0m
+[0;32mI (60326) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (60336) BUTTON: Received button states: {"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (60336) BUTTON: Button1: 0, Button2: 0, Button3: 0[0m
+[0;32mI (60866) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=47, data={"humidity":47.20000076293945,"temperature":29}[0m
+[0;32mI (60866) HTTP_CLIENT: HTTP POST status: 200[0m
+[0;32mI (60876) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (61896) DHT_SENSOR: Humidity: 47.1%, Temp: 29.0C[0m
+[0;32mI (63096) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (63486) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=37, data={"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (63496) HTTP_CLIENT: HTTP GET status: 200[0m
+[0;32mI (63496) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (63496) BUTTON: Received button states: {"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (63506) BUTTON: Button1: 0, Button2: 0, Button3: 0[0m
+[0;32mI (64016) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=46, data={"humidity":47.0999984741211,"temperature":29}[0m
+[0;32mI (64016) HTTP_CLIENT: HTTP POST status: 200[0m
+[0;32mI (64026) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (65046) DHT_SENSOR: Humidity: 47.1%, Temp: 29.0C[0m
+[0;32mI (66556) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (66676) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (66876) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=37, data={"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (66886) HTTP_CLIENT: HTTP GET status: 200[0m
+[0;32mI (66886) BUTTON: Received button states: {"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (66896) BUTTON: Button1: 0, Button2: 0, Button3: 0[0m
+[0;32mI (67486) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=46, data={"humidity":47.0999984741211,"temperature":29}[0m
+[0;32mI (67486) HTTP_CLIENT: HTTP POST status: 200[0m
+[0;32mI (67496) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (68516) DHT_SENSOR: Humidity: 47.2%, Temp: 29.1C[0m
+[0;32mI (70576) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (70576) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (71106) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=37, data={"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (71106) HTTP_CLIENT: HTTP GET status: 200[0m
+[0;32mI (71116) BUTTON: Received button states: {"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (71116) BUTTON: Button1: 0, Button2: 0, Button3: 0[0m
+[0;32mI (71136) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=63, data={"humidity":47.20000076293945,"temperature":29.100000381469727}[0m
+[0;32mI (71136) HTTP_CLIENT: HTTP POST status: 200[0m
+[0;32mI (71146) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (72166) DHT_SENSOR: Humidity: 47.2%, Temp: 29.1C[0m
+[0;32mI (74186) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (74186) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (74616) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=37, data={"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (74616) HTTP_CLIENT: HTTP GET status: 200[0m
+[0;32mI (74626) BUTTON: Received button states: {"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (74626) BUTTON: Button1: 0, Button2: 0, Button3: 0[0m
+[0;32mI (74676) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=63, data={"humidity":47.20000076293945,"temperature":29.100000381469727}[0m
+[0;32mI (74686) HTTP_CLIENT: HTTP POST status: 200[0m
+[0;32mI (74696) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (75716) DHT_SENSOR: Humidity: 47.2%, Temp: 29.1C[0m
+[0;32mI (77246) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (77356) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (77536) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=37, data={"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (77536) HTTP_CLIENT: HTTP GET status: 200[0m
+[0;32mI (77546) BUTTON: Received button states: {"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (77546) BUTTON: Button1: 0, Button2: 0, Button3: 0[0m
+[0;32mI (77926) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=63, data={"humidity":47.20000076293945,"temperature":29.100000381469727}[0m
+[0;32mI (77926) HTTP_CLIENT: HTTP POST status: 200[0m
+[0;32mI (77936) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (78956) DHT_SENSOR: Humidity: 47.2%, Temp: 29.1C[0m
+[0;32mI (80086) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (80426) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=37, data={"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (80426) HTTP_CLIENT: HTTP GET status: 200[0m
+[0;32mI (80436) BUTTON: Received button states: {"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (80446) BUTTON: Button1: 0, Button2: 0, Button3: 0[0m
+[0;32mI (80786) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (81456) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=63, data={"humidity":47.20000076293945,"temperature":29.100000381469727}[0m
+[0;32mI (81456) HTTP_CLIENT: HTTP POST status: 200[0m
+[0;32mI (81476) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (82496) DHT_SENSOR: Humidity: 47.2%, Temp: 29.1C[0m
+[0;32mI (83356) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (83906) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=37, data={"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (83906) HTTP_CLIENT: HTTP GET status: 200[0m
+[0;32mI (83916) BUTTON: Received button states: {"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (83916) BUTTON: Button1: 0, Button2: 0, Button3: 0[0m
+[0;32mI (84476) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (84986) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=63, data={"humidity":47.20000076293945,"temperature":29.100000381469727}[0m
+[0;32mI (84996) HTTP_CLIENT: HTTP POST status: 200[0m
+[0;32mI (85006) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (86026) DHT_SENSOR: Humidity: 47.1%, Temp: 29.1C[0m
+[0;32mI (86536) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (87146) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=37, data={"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (87156) HTTP_CLIENT: HTTP GET status: 200[0m
+[0;32mI (87166) BUTTON: Received button states: {"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (87166) BUTTON: Button1: 0, Button2: 0, Button3: 0[0m
+[0;32mI (87876) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (88466) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=62, data={"humidity":47.0999984741211,"temperature":29.100000381469727}[0m
+[0;32mI (88476) HTTP_CLIENT: HTTP POST status: 200[0m
+[0;32mI (88486) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (89506) DHT_SENSOR: Humidity: 47.1%, Temp: 29.1C[0m
+[0;32mI (89726) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (90026) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=37, data={"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (90026) HTTP_CLIENT: HTTP GET status: 200[0m
+[0;32mI (90036) BUTTON: Received button states: {"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (90036) BUTTON: Button1: 0, Button2: 0, Button3: 0[0m
+[0;32mI (91176) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (92066) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=62, data={"humidity":47.0999984741211,"temperature":29.100000381469727}[0m
+[0;32mI (92066) HTTP_CLIENT: HTTP POST status: 200[0m
+[0;32mI (92076) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (93046) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (93096) DHT_SENSOR: Humidity: 47.1%, Temp: 29.1C[0m
+[0;32mI (93486) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=37, data={"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (93496) HTTP_CLIENT: HTTP GET status: 200[0m
+[0;32mI (93496) BUTTON: Received button states: {"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (93506) BUTTON: Button1: 0, Button2: 0, Button3: 0[0m
+[0;32mI (94926) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (95336) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=62, data={"humidity":47.0999984741211,"temperature":29.100000381469727}[0m
+[0;32mI (95336) HTTP_CLIENT: HTTP POST status: 200[0m
+[0;32mI (95346) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (96366) DHT_SENSOR: Humidity: 47.1%, Temp: 29.1C[0m
+[0;32mI (96426) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (96766) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=37, data={"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (96776) HTTP_CLIENT: HTTP GET status: 200[0m
+[0;32mI (96776) BUTTON: Received button states: {"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (96786) BUTTON: Button1: 0, Button2: 0, Button3: 0[0m
+[0;32mI (98056) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (98566) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=62, data={"humidity":47.0999984741211,"temperature":29.100000381469727}[0m
+[0;32mI (98566) HTTP_CLIENT: HTTP POST status: 200[0m
+[0;32mI (98586) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (99606) DHT_SENSOR: Humidity: 47.0%, Temp: 29.1C[0m
+[0;32mI (99636) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (99956) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=37, data={"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (99956) HTTP_CLIENT: HTTP GET status: 200[0m
+[0;32mI (99966) BUTTON: Received button states: {"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (99966) BUTTON: Button1: 0, Button2: 0, Button3: 0[0m
+[0;32mI (101316) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (101996) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=48, data={"humidity":47,"temperature":29.100000381469727}[0m
+[0;32mI (101996) HTTP_CLIENT: HTTP POST status: 200[0m
+[0;32mI (102006) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (103026) DHT_SENSOR: Humidity: 47.0%, Temp: 29.1C[0m
+[0;32mI (104396) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (104816) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=37, data={"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (104826) HTTP_CLIENT: HTTP GET status: 200[0m
+[0;32mI (104836) BUTTON: Received button states: {"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (104836) BUTTON: Button1: 0, Button2: 0, Button3: 0[0m
+[0;32mI (105106) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (105606) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=48, data={"humidity":47,"temperature":29.100000381469727}[0m
+[0;32mI (105606) HTTP_CLIENT: HTTP POST status: 200[0m
+[0;32mI (105616) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (106636) DHT_SENSOR: Humidity: 47.0%, Temp: 29.1C[0m
+[0;32mI (107256) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (107616) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=37, data={"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (107616) HTTP_CLIENT: HTTP GET status: 200[0m
+[0;32mI (107626) BUTTON: Received button states: {"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (107636) BUTTON: Button1: 0, Button2: 0, Button3: 0[0m
+[0;32mI (108456) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (108956) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=48, data={"humidity":47,"temperature":29.100000381469727}[0m
+[0;32mI (108956) HTTP_CLIENT: HTTP POST status: 200[0m
+[0;32mI (108966) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (109996) DHT_SENSOR: Humidity: 47.1%, Temp: 29.1C[0m
+[0;32mI (110226) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (110906) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=37, data={"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (110906) HTTP_CLIENT: HTTP GET status: 200[0m
+[0;32mI (110916) BUTTON: Received button states: {"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (110916) BUTTON: Button1: 0, Button2: 0, Button3: 0[0m
+[0;32mI (111966) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (112546) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=62, data={"humidity":47.0999984741211,"temperature":29.100000381469727}[0m
+[0;32mI (112546) HTTP_CLIENT: HTTP POST status: 200[0m
+[0;32mI (112556) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (113576) DHT_SENSOR: Humidity: 47.1%, Temp: 29.1C[0m
+[0;32mI (113796) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (114306) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=37, data={"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (114306) HTTP_CLIENT: HTTP GET status: 200[0m
+[0;32mI (114316) BUTTON: Received button states: {"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (114316) BUTTON: Button1: 0, Button2: 0, Button3: 0[0m
+[0;32mI (115416) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (116186) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=62, data={"humidity":47.0999984741211,"temperature":29.100000381469727}[0m
+[0;32mI (116186) HTTP_CLIENT: HTTP POST status: 200[0m
+[0;32mI (116206) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (116856) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (117206) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=37, data={"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (117206) HTTP_CLIENT: HTTP GET status: 200[0m
+[0;32mI (117206) BUTTON: Received button states: {"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (117206) BUTTON: Button1: 0, Button2: 0, Button3: 0[0m
+[0;32mI (117226) DHT_SENSOR: Humidity: 47.1%, Temp: 29.1C[0m
+[0;32mI (118926) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (119666) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=62, data={"humidity":47.0999984741211,"temperature":29.100000381469727}[0m
+[0;32mI (119676) HTTP_CLIENT: HTTP POST status: 200[0m
+[0;32mI (119686) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (120026) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (120546) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=37, data={"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (120546) HTTP_CLIENT: HTTP GET status: 200[0m
+[0;32mI (120546) BUTTON: Received button states: {"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (120556) BUTTON: Button1: 0, Button2: 0, Button3: 0[0m
+[0;32mI (120706) DHT_SENSOR: Humidity: 47.0%, Temp: 29.1C[0m
+[0;32mI (122796) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (123186) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (123286) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=48, data={"humidity":47,"temperature":29.100000381469727}[0m
+[0;32mI (123286) HTTP_CLIENT: HTTP POST status: 200[0m
+[0;32mI (123296) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (123616) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=37, data={"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (123616) HTTP_CLIENT: HTTP GET status: 200[0m
+[0;32mI (123626) BUTTON: Received button states: {"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (123626) BUTTON: Button1: 0, Button2: 0, Button3: 0[0m
+[0;32mI (124316) DHT_SENSOR: Humidity: 47.0%, Temp: 29.1C[0m
+[0;32mI (126276) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (126866) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=48, data={"humidity":47,"temperature":29.100000381469727}[0m
+[0;32mI (126866) HTTP_CLIENT: HTTP POST status: 200[0m
+[0;32mI (126876) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (127896) DHT_SENSOR: Humidity: 47.0%, Temp: 29.1C[0m
+[0;32mI (127946) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (128356) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=37, data={"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (128356) HTTP_CLIENT: HTTP GET status: 200[0m
+[0;32mI (128366) BUTTON: Received button states: {"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (128366) BUTTON: Button1: 0, Button2: 0, Button3: 0[0m
+[0;32mI (129686) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (130116) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=48, data={"humidity":47,"temperature":29.100000381469727}[0m
+[0;32mI (130116) HTTP_CLIENT: HTTP POST status: 200[0m
+[0;32mI (130126) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (131146) DHT_SENSOR: Humidity: 46.9%, Temp: 29.1C[0m
+[0;32mI (131396) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (131796) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=37, data={"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (131796) HTTP_CLIENT: HTTP GET status: 200[0m
+[0;32mI (131806) BUTTON: Received button states: {"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (131816) BUTTON: Button1: 0, Button2: 0, Button3: 0[0m
+[0;32mI (132926) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (133746) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=62, data={"humidity":46.9000015258789,"temperature":29.100000381469727}[0m
+[0;32mI (133746) HTTP_CLIENT: HTTP POST status: 200[0m
+[0;32mI (133756) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (134776) DHT_SENSOR: Humidity: 46.9%, Temp: 29.1C[0m
+[0;32mI (134836) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (135596) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=37, data={"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (135596) HTTP_CLIENT: HTTP GET status: 200[0m
+[0;32mI (135606) BUTTON: Received button states: {"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (135606) BUTTON: Button1: 0, Button2: 0, Button3: 0[0m
+[0;32mI (136726) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (137536) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=62, data={"humidity":46.9000015258789,"temperature":29.100000381469727}[0m
+[0;32mI (137546) HTTP_CLIENT: HTTP POST status: 200[0m
+[0;32mI (137556) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (138576) DHT_SENSOR: Humidity: 46.9%, Temp: 29.1C[0m
+[0;32mI (138656) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (139176) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=37, data={"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (139176) HTTP_CLIENT: HTTP GET status: 200[0m
+[0;32mI (139186) BUTTON: Received button states: {"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (139186) BUTTON: Button1: 0, Button2: 0, Button3: 0[0m
+[0;32mI (140226) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (141006) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=62, data={"humidity":46.9000015258789,"temperature":29.100000381469727}[0m
+[0;32mI (141016) HTTP_CLIENT: HTTP POST status: 200[0m
+[0;32mI (141026) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (142046) DHT_SENSOR: Humidity: 46.9%, Temp: 29.1C[0m
+[0;32mI (142306) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (143006) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=37, data={"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (143006) HTTP_CLIENT: HTTP GET status: 200[0m
+[0;32mI (143016) BUTTON: Received button states: {"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (143016) BUTTON: Button1: 0, Button2: 0, Button3: 0[0m
+[0;32mI (144096) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (145276) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=62, data={"humidity":46.9000015258789,"temperature":29.100000381469727}[0m
+[0;32mI (145276) HTTP_CLIENT: HTTP POST status: 200[0m
+[0;32mI (145286) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (145686) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (146146) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=37, data={"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (146146) HTTP_CLIENT: HTTP GET status: 200[0m
+[0;32mI (146156) BUTTON: Received button states: {"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (146156) BUTTON: Button1: 0, Button2: 0, Button3: 0[0m
+[0;32mI (146306) DHT_SENSOR: Humidity: 47.0%, Temp: 29.1C[0m
+[0;32mI (148306) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (148796) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=48, data={"humidity":47,"temperature":29.100000381469727}[0m
+[0;32mI (148796) HTTP_CLIENT: HTTP POST status: 200[0m
+[0;32mI (148796) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (148806) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (149316) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=37, data={"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (149316) HTTP_CLIENT: HTTP GET status: 200[0m
+[0;32mI (149326) BUTTON: Received button states: {"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (149326) BUTTON: Button1: 0, Button2: 0, Button3: 0[0m
+[0;32mI (149826) DHT_SENSOR: Humidity: 47.1%, Temp: 29.1C[0m
+[0;32mI (152646) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (153106) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (153106) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=37, data={"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (153116) HTTP_CLIENT: HTTP GET status: 200[0m
+[0;32mI (153126) BUTTON: Received button states: {"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (153126) BUTTON: Button1: 0, Button2: 0, Button3: 0[0m
+[0;32mI (153596) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=62, data={"humidity":47.0999984741211,"temperature":29.100000381469727}[0m
+[0;32mI (153596) HTTP_CLIENT: HTTP POST status: 200[0m
+[0;32mI (153606) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (154626) DHT_SENSOR: Humidity: 47.0%, Temp: 29.1C[0m
+[0;32mI (156256) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (156696) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (156696) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=37, data={"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (156706) HTTP_CLIENT: HTTP GET status: 200[0m
+[0;32mI (156716) BUTTON: Received button states: {"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (156716) BUTTON: Button1: 0, Button2: 0, Button3: 0[0m
+[0;32mI (157596) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=48, data={"humidity":47,"temperature":29.100000381469727}[0m
+[0;32mI (157606) HTTP_CLIENT: HTTP POST status: 200[0m
+[0;32mI (157616) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (158636) DHT_SENSOR: Humidity: 47.0%, Temp: 29.1C[0m
+[0;32mI (159436) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (159736) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=37, data={"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (159736) HTTP_CLIENT: HTTP GET status: 200[0m
+[0;32mI (159746) BUTTON: Received button states: {"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (159746) BUTTON: Button1: 0, Button2: 0, Button3: 0[0m
+[0;32mI (160366) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (160876) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=48, data={"humidity":47,"temperature":29.100000381469727}[0m
+[0;32mI (160876) HTTP_CLIENT: HTTP POST status: 200[0m
+[0;32mI (160886) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (161906) DHT_SENSOR: Humidity: 47.0%, Temp: 29.1C[0m
+[0;32mI (162676) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (163236) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=37, data={"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (163236) HTTP_CLIENT: HTTP GET status: 200[0m
+[0;32mI (163246) BUTTON: Received button states: {"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (163256) BUTTON: Button1: 0, Button2: 0, Button3: 0[0m
+[0;32mI (163956) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (164456) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=48, data={"humidity":47,"temperature":29.100000381469727}[0m
+[0;32mI (164456) HTTP_CLIENT: HTTP POST status: 200[0m
+[0;32mI (164466) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (165486) DHT_SENSOR: Humidity: 47.0%, Temp: 29.1C[0m
+[0;32mI (165996) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (166526) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=37, data={"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (166536) HTTP_CLIENT: HTTP GET status: 200[0m
+[0;32mI (166536) BUTTON: Received button states: {"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (166546) BUTTON: Button1: 0, Button2: 0, Button3: 0[0m
+[0;32mI (166916) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (167576) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=48, data={"humidity":47,"temperature":29.100000381469727}[0m
+[0;32mI (167576) HTTP_CLIENT: HTTP POST status: 200[0m
+[0;32mI (167586) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (168606) DHT_SENSOR: Humidity: 47.0%, Temp: 29.1C[0m
+[0;32mI (169506) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (169946) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=37, data={"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (169946) HTTP_CLIENT: HTTP GET status: 200[0m
+[0;32mI (169956) BUTTON: Received button states: {"button1":0,"button2":0,"button3":0}[0m
+[0;32mI (169966) BUTTON: 

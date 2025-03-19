@@ -1,0 +1,240 @@
+#include <stdio.h>
+#include "freertos/FreeRTOS.h"
+#include "freertos/task.h"
+#include "esp_log.h"
+#include "esp_http_client.h"
+#include "driver/gpio.h"
+#include "wifi.h"
+#include "cJSON.h"
+
+// Firebase URL
+#define FIREBASE_URL "https://fir-getstart-9f542-default-rtdb.firebaseio.com/hello.json"
+#define FIREBASE_URL1 "https://fir-getstart-9f542-default-rtdb.firebaseio.com/esp32.json"
+
+// GPIO pin for LED
+#define LED1 GPIO_NUM_2
+#define MESSAGE_KEY "message" 
+
+// Certificate for HTTPS connection
+extern const uint8_t certificate_pem_start[] asm("_binary_certificate_pem_start");
+extern const uint8_t certificate_pem_end[] asm("_binary_certificate_pem_end");
+
+static const char *TAG_HTTP = "HTTP_CLIENT";
+
+#define MAX_BUFFER_SIZE 256
+
+/* Callback or event handler */
+esp_err_t http_event_handler(esp_http_client_event_t *evt)
+{
+    switch (evt->event_id)
+    {
+    case HTTP_EVENT_ERROR:
+        ESP_LOGI(TAG_HTTP, "HTTP_EVENT_ERROR");
+        break;
+
+    case HTTP_EVENT_ON_CONNECTED:
+        ESP_LOGI(TAG_HTTP, "HTTP_EVENT_ON_CONNECTED");
+        break;
+
+    case HTTP_EVENT_ON_DATA:
+        ESP_LOGI(TAG_HTTP, "HTTP_EVENT_ON_DATA, len=%d", evt->data_len);
+
+        if (evt->data_len > MAX_BUFFER_SIZE)
+            return ESP_FAIL;
+
+        // If user_data buffer is configured, copy the response into the buffer
+        if (evt->user_data)
+        {
+            memcpy(evt->user_data, evt->data, evt->data_len);
+            ((char *)evt->user_data)[evt->data_len] = '\0'; // Ensure null termination
+        }
+        break;
+
+    case HTTP_EVENT_DISCONNECTED:
+        ESP_LOGD(TAG_HTTP, "HTTP_EVENT_DISCONNECTED");
+        break;
+
+    default:
+        break;
+    }
+    return ESP_OK;
+}
+
+/* GET Functions */
+esp_err_t http_client_get_req(char *data, const char *url)
+{
+    esp_err_t ret_code = ESP_FAIL;
+
+    esp_http_client_config_t config = {
+        .event_handler = http_event_handler,
+        .method = HTTP_METHOD_GET,
+        .url = url,
+        .cert_pem = (const char *)certificate_pem_start,
+        .user_data = data
+    };
+
+    esp_http_client_handle_t client = esp_http_client_init(&config);
+    esp_err_t err = esp_http_client_perform(client);
+    if (err == ESP_OK)
+    {
+        int status = esp_http_client_get_status_code(client);
+
+        if (status == 200)
+        {
+            ESP_LOGI(TAG_HTTP, "HTTP GET status: %d", status);
+            ret_code = ESP_OK;
+        }
+        else
+        {
+            ESP_LOGE(TAG_HTTP, "HTTP GET status: %d", status);
+        }
+    }
+    else
+    {
+        ESP_LOGE(TAG_HTTP, "Failed to send GET request");
+    }
+    esp_http_client_cleanup(client);
+
+    return ret_code;
+}
+/* PUT Functions */
+esp_err_t http_client_post_req(char *data, const char *url)
+{
+    esp_err_t ret_code = ESP_FAIL;
+    esp_http_client_config_t config = {
+        .event_handler = http_event_handler,
+        .method = HTTP_METHOD_PUT,
+        .url = url,
+        .cert_pem = (const char *)certificate_pem_start,
+        // .user_data = data
+    };
+
+    esp_http_client_handle_t client = esp_http_client_init(&config);
+    esp_http_client_set_header(client, "Content-Type", "application/json");
+    esp_http_client_set_post_field(client, data, strlen(data));
+    esp_err_t err = esp_http_client_perform(client);
+    if (err == ESP_OK)
+    {
+        int status = esp_http_client_get_status_code(client);
+
+        if (status == 200)
+        {
+            ESP_LOGI(TAG_HTTP, "HTTP PUT status: %d", status);
+            ret_code = ESP_OK;
+        }
+        else
+        {
+            ESP_LOGE(TAG_HTTP, "HTTP PUT status: %d", status);
+        }
+    }
+    else
+    {
+        ESP_LOGE(TAG_HTTP, "Failed to send PUT request");
+    }
+    esp_http_client_cleanup(client);
+
+    return ret_code;
+}
+
+void Post_task(void *arg)
+{
+    int num_firebase_fail = 0;
+    while (1)
+    {
+        // JSON payload creation
+        cJSON *root = cJSON_CreateObject();
+        cJSON_AddStringToObject(root, "message", "Hello, Firebase!");
+        cJSON_AddNumberToObject(root, "value", 123);
+        const char *post_data = cJSON_Print(root);
+
+        if (http_client_post_req((char *)post_data, FIREBASE_URL1) == ESP_OK)
+        {
+            num_firebase_fail = 0;
+            ESP_LOGI(TAG_HTTP, "Data successfully sent to Firebase");
+        }
+        else
+        {
+            num_firebase_fail++;
+            ESP_LOGE(TAG_HTTP, "Failed to send data to Firebase, attempt %d", num_firebase_fail);
+            if (num_firebase_fail >= 10)
+            {
+                //turn off the light here
+            }
+        }
+        free(post_data);
+        cJSON_Delete(root); // Free JSON object
+        vTaskDelay(pdMS_TO_TICKS(2000)); // Delay 2 seconds
+    }
+    vTaskDelete(NULL);
+}
+
+
+/* Task functions */
+void Get_task(void *arg)
+{
+    int num_firebase_fail = 0;
+
+    // Configure GPIO for LED
+    gpio_config_t io_config = {
+        .pin_bit_mask = 1ULL << LED1,
+        .mode = GPIO_MODE_OUTPUT
+    };
+    gpio_config(&io_config);
+
+    while (1)
+    {
+        char data[MAX_BUFFER_SIZE] = {0};
+
+        /* If the attribute is returned correctly */
+        if (http_client_get_req(data, FIREBASE_URL) == ESP_OK)
+        {
+            /* Reset num_attr_fail */
+            num_firebase_fail = 0;
+
+            /* Parse JSON to get LED state */
+            cJSON *root = cJSON_Parse(data);
+            if (root)
+            {
+                cJSON *led_state = cJSON_GetObjectItem(root, "LED1"); // Look for "LED1"
+                if (cJSON_IsNumber(led_state))
+                {
+                    int is_on = led_state->valueint; // Get the integer value
+                    gpio_set_level(LED1, is_on ? 1 : 0);
+                    ESP_LOGI(TAG_HTTP, "LED1 state: %s", is_on ? "ON" : "OFF");
+                }
+                else
+                {
+                    ESP_LOGW(TAG_HTTP, "LED1 not found or not an integer");
+                }
+                cJSON_Delete(root);
+            }
+            else
+            {
+                ESP_LOGE(TAG_HTTP, "Failed to parse JSON");
+            }
+        }
+        /* If the attribute fails 10 times, turn off the LED (for safety) */
+        else
+        {
+            num_firebase_fail++;
+            if (num_firebase_fail >= 10)
+            {
+                ESP_LOGW(TAG_HTTP, "Failed to retrieve data 10 times, turning off LED");
+                gpio_set_level(LED1, 0);
+            }
+        }
+
+        vTaskDelay(pdMS_TO_TICKS(2000));
+    }
+    vTaskDelete(NULL);
+}
+
+void app_main(void)
+{
+    ESP_LOGI("APP_MAIN", "Starting application...");
+    wifi_init();
+
+    // Start the Firebase task
+    xTaskCreate(Get_task, "firebase_task", 4096, NULL, 5, NULL);
+    xTaskCreate(Post_task, "firebase_put_task", 4096, NULL, 5, NULL);
+}

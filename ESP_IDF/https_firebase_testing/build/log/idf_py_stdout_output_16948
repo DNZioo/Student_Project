@@ -1,0 +1,163 @@
+ets Jun  8 2016 00:22:57C�HH���0x1 (POWERON_��UQ�,boot:0x17 (SPIeMT_FLASH_BOOT)
+configsi� 0, SPIWP:0xee
+clk_drv'��0,q_drv:0x00,d_drv:0�0,cs0_drv:0x00,hd_drv:0�0,wp_drv:0x00
+mode:T�	�����div:2
+loa����fff0030,len:7176!�+��0x40078000,len:LMMSH�������12 roo[�j
+load:0x40080400,len'SH��+��0x40080404����3904
+entry 0x400����j
+[0;32mI (30) boot: ESP-IDF v5.3.1-395-g707d097b01 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Nov 26 2024 23:14:03[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2af88h (176008) map[0m
+[0;32mI (165) esp_image: segment 1: paddr=0003afb0 vaddr=3ffb0000 size=03f88h ( 16264) load[0m
+[0;32mI (171) esp_image: segment 2: paddr=0003ef40 vaddr=40080000 size=010d8h (  4312) load[0m
+[0;32mI (173) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a757ch (685436) map[0m
+[0;32mI (414) esp_image: segment 4: paddr=000e75a4 vaddr=400810d8 size=17718h ( 96024) load[0m
+[0;32mI (464) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (464) boot: Disabling RNG early entropy source...[0m
+[0;32mI (477) cpu_start: Multicore app[0m
+[0;32mI (485) cpu_start: Pro cpu start user code[0m
+[0;32mI (486) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (486) app_init: Application information:[0m
+[0;32mI (488) app_init: Project name:     https_firebase_testing[0m
+[0;32mI (495) app_init: App version:      1[0m
+[0;32mI (499) app_init: Compile time:     Jan 30 2025 15:01:22[0m
+[0;32mI (505) app_init: ELF file SHA256:  599738e16...[0m
+[0;32mI (510) app_init: ESP-IDF:          v5.3.1-395-g707d097b01[0m
+[0;32mI (516) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (521) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (526) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (531) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (538) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (544) heap_init: At 3FFB87F8 len 00027808 (158 KiB): DRAM[0m
+[0;32mI (550) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (557) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (563) heap_init: At 400987F0 len 00007810 (30 KiB): IRAM[0m
+[0;32mI (571) spi_flash: detected chip: generic[0m
+[0;32mI (574) spi_flash: flash io: dio[0m
+[0;33mW (578) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (591) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (603) main_task: Started on CPU0[0m
+[0;32mI (613) main_task: Calling app_main()[0m
+[0;32mI (633) example_connect: Start example_connect.[0m
+[0;32mI (643) wifi:wifi driver task: 3ffc04b4, prio:23, stack:6656, core=0[0m
+[0;32mI (653) wifi:wifi firmware version: 6f4dea5[0m
+[0;32mI (653) wifi:wifi certification version: v7.0[0m
+[0;32mI (653) wifi:config NVS flash: enabled[0m
+[0;32mI (653) wifi:config nano formating: disabled[0m
+[0;32mI (653) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (663) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (663) wifi:Init management short buffer num: 32[0m
+[0;32mI (673) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (673) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (683) wifi:Init static rx buffer num: 10[0m
+[0;32mI (683) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (683) wifi_init: rx ba win: 6[0m
+[0;32mI (693) wifi_init: accept mbox: 6[0m
+[0;32mI (693) wifi_init: tcpip mbox: 32[0m
+[0;32mI (693) wifi_init: udp mbox: 6[0m
+[0;32mI (703) wifi_init: tcp mbox: 6[0m
+[0;32mI (703) wifi_init: tcp tx win: 5760[0m
+[0;32mI (713) wifi_init: tcp rx win: 5760[0m
+[0;32mI (713) wifi_init: tcp mss: 1440[0m
+[0;32mI (713) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (723) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (733) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+[0;33mW (813) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+[0;32mI (843) wifi:mode : sta (4c:11:ae:65:b6:10)[0m
+[0;32mI (843) wifi:enable tsf[0m
+[0;32mI (843) example_connect: Connecting to DNZio...[0m
+[0;33mW (843) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (853) example_connect: Waiting for IP(s)[0m
+[0;32mI (3263) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3263) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (4553) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (4573) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (4693) wifi:connected with DNZio, aid = 1, channel 6, BW20, bssid = 16:07:8c:93:71:2e[0m
+[0;32mI (4693) wifi:security: WPA3-SAE, phy: bgn, rssi: -42[0m
+[0;32mI (4693) wifi:pm start, type: 1[0m
+
+[0;32mI (4693) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (4783) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (5213) wifi:<ba-add>idx:0 (ifx:0, 16:07:8c:93:71:2e), tid:0, ssn:2, winSize:64[0m
+[0;32mI (6203) esp_netif_handlers: example_netif_sta ip: 172.20.10.5, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (6203) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 172.20.10.5[0m
+[0;32mI (6633) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:4e11:aeff:fe65:b610, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (6633) example_common: Connected to example_netif_sta[0m
+[0;32mI (6643) example_common: - IPv4 address: 172.20.10.5,[0m
+[0;32mI (6643) example_common: - IPv6 address: fe80:0000:0000:0000:4e11:aeff:fe65:b610, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (6683) DHT_SENSOR: Humidity: 46.9%, Temp: 28.7C[0m
+[0;31mE (6703) i2cdev: Could not write to device [0x23 at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (6703) BH1750_SENSOR: Failed to initialize BH1750.[0m
+[0;32mI (8273) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (8663) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=31, data={"name":"-OHqEB6kMcxtybaA6IL0"}[0m
+[0;32mI (8663) HTTP_CLIENT: HTTP POST status: 200[0m
+[0;32mI (8673) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (9693) DHT_SENSOR: Humidity: 46.3%, Temp: 29.0C[0m
+[0;32mI (11753) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (12263) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=31, data={"name":"-OHqEByADBdJ7LFvNAjq"}[0m
+[0;32mI (12263) HTTP_CLIENT: HTTP POST status: 200[0m
+[0;32mI (12273) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (13293) DHT_SENSOR: Humidity: 46.3%, Temp: 29.0C[0m
+[0;32mI (14923) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (15333) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=31, data={"name":"-OHqECjg4sm9k91oays2"}[0m
+[0;32mI (15333) HTTP_CLIENT: HTTP POST status: 200[0m
+[0;32mI (15343) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (16363) DHT_SENSOR: Humidity: 46.3%, Temp: 29.0C[0m
+[0;32mI (17903) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (18613) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=31, data={"name":"-OHqEDW94qd6YJQ9P2o6"}[0m
+[0;32mI (18613) HTTP_CLIENT: HTTP POST status: 200[0m
+[0;32mI (18623) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (19643) DHT_SENSOR: Humidity: 46.3%, Temp: 29.0C[0m
+[0;32mI (21173) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (21583) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=31, data={"name":"-OHqEEGLM7HVfxWpWNEk"}[0m
+[0;32mI (21583) HTTP_CLIENT: HTTP POST status: 200[0m
+[0;32mI (21593) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (22613) DHT_SENSOR: Humidity: 46.3%, Temp: 29.1C[0m
+[0;32mI (24143) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (24753) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=31, data={"name":"-OHqEF0G9LhpAWYsVoA_"}[0m
+[0;32mI (24753) HTTP_CLIENT: HTTP POST status: 200[0m
+[0;32mI (24763) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (25783) DHT_SENSOR: Humidity: 46.3%, Temp: 29.0C[0m
+[0;32mI (27313) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (27763) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=31, data={"name":"-OHqEFlHAecogJukpqrT"}[0m
+[0;32mI (27763) HTTP_CLIENT: HTTP POST status: 200[0m
+[0;32mI (27773) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (28793) DHT_SENSOR: Humidity: 46.3%, Temp: 29.0C[0m
+[0;32mI (30383) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (30803) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=31, data={"name":"-OHqEGWC-g7sElb0NS0I"}[0m
+[0;32mI (30803) HTTP_CLIENT: HTTP POST status: 200[0m
+[0;32mI (30813) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (31833) DHT_SENSOR: Humidity: 46.2%, Temp: 29.1C[0m
+[0;32mI (33673) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (34273) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=31, data={"name":"-OHqEHL1ubecfW4nCz2v"}[0m
+[0;32mI (34283) HTTP_CLIENT: HTTP POST status: 200[0m
+[0;32mI (34283) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (35303) DHT_SENSOR: Humidity: 46.3%, Temp: 29.1C[0m
+[0;32mI (36943) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (37353) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=31, data={"name":"-OHqEI6Pi7f34RPUaVil"}[0m
+[0;32mI (37363) HTTP_CLIENT: HTTP POST status: 200[0m
+[0;32mI (37363) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (38383) DHT_SENSOR: Humidity: 46.3%, Temp: 29.1C[0m
+[0;32mI (39913) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (40633) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=31, data={"name":"-OHqEIrkzecVCgA9G0Yw"}[0m
+[0;32mI (40633) HTTP_CLIENT: HTTP POST status: 200[0m
+[0;32mI (40643) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (41663) DHT_SENSOR: Humidity: 46.3%, Temp: 29.1C[0m
+[0;32mI (43393) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (44003) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=31, data={"name":"-OHqEJi5ttnZr05QU7Zg"}[0m
+[0;32mI (44013) HTTP_CLIENT: HTTP POST status: 200[0m
+[0;32mI (44013) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (45033) DHT_SENSOR: Humidity: 46.2%, Temp: 29.1C[0m
+[0;32mI (46563) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m

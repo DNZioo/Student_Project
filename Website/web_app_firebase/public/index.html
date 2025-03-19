@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ESP IoT Firebase App</title>
+
+    <!-- update the version number as needed -->
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+
+    <!-- include only the Firebase features as you need -->
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+
+    <script>
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+    apiKey: "AIzaSyACQuJqEYyG_oCZqy_e8LzR_DG9scuSpA0",
+    authDomain: "https-start-617d7.firebaseapp.com",
+    databaseURL: "https://https-start-617d7-default-rtdb.firebaseio.com",
+    projectId: "https-start-617d7",
+    storageBucket: "https-start-617d7.firebasestorage.app",
+    messagingSenderId: "943909784861",
+    appId: "1:943909784861:web:21b0e8d82a9b96785d65f4",
+    measurementId: "G-V8FGTQWEHZ"
+    };
+
+      // Initialize firebase
+      firebase.initializeApp(firebaseConfig);
+
+      // Make auth and database references
+      const auth = firebase.auth();
+      const db = firebase.database();
+
+    </script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <!--TOP BAR-->
+  <div class="topnav">
+    <h1>HOME MONITORING AND CONTROLLING <i class="fas fa-lightbulb"></i></h1>
+  </div>
+
+  <!--AUTHENTICATION BAR (USER DETAILS/LOGOUT BUTTON)-->
+  <div id="authentication-bar" style="display: none;">
+    <p><span id="authentication-status">User logged in</span>
+       <span id="user-details">USEREMAIL</span>
+       <a href="/" id="logout-link">(logout)</a>
+    </p>
+  </div>
+
+  <!--LOGIN FORM-->
+  <form id="login-form" style="display: none;">
+    <div class="form-elements-container">
+      <label for="input-email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Username" id="input-email" required>
+
+      <label for="input-password"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" id="input-password" required>
+
+      <button type="submit" id="login-button">Login</button>
+      <p id="error-message" style="color:red;"></p>
+    </div>
+  </form>
+
+  <!--CONTENT (SENSOR READINGS)-->
+  <div class="content-sign-in" id="content-sign-in" style="display: none;">
+    <div class="card-grid">
+      <!--CARD FOR GPIO 12-->
+      <div class="card">
+        <p class="card-title"><i class="fas fa-lightbulb"></i> RELAY R1</p>
+        <p>
+          <button class="button-on" id="btn1On">ON</button>
+          <button class="button-off" id="btn1Off">OFF</button>
+        </p>
+        <p class="state">State:<span id="state1"></span></p>
+      </div>
+
+      <!--CARD FOR GPIO 13-->
+      <div class="card">
+        <p class="card-title"><i class="fas fa-lightbulb"></i> RELAY R2</p>
+        <p>
+          <button class="button-on" id="btn2On">ON</button>
+          <button class="button-off" id="btn2Off">OFF</button>
+        </p>
+        <p class="state">State:<span id="state2"></span></p>
+      </div>
+
+      <!--CARD FOR GPIO 14-->
+      <div class="card">
+        <p class="card-title"><i class="fas fa-lightbulb"></i> RELAY R3</p>
+        <p>
+          <button class="button-on" id="btn3On">ON</button>
+          <button class="button-off" id="btn3Off">OFF</button>
+        </p>
+        <p class="state">State:<span id="state3"></span></p>
+      </div>
+
+       <!-- Sensor Data -->
+       <div class="card">
+        <p><i class="fas fa-thermometer-half" style="color:#e72b3b;"></i> TEMPERATURE</p>
+        <p><span class="reading"><span id="temp"></span></span></p>
+      </div>
+
+      <div class="card">
+        <p><i class="fas fa-tint" style="color:#00add6;"></i> HUMIDITY</p>
+        <p><span class="reading"><span id="hum"></span></span></p>
+      </div>
+
+      <div class="card">
+        <p><i class="fas fa-rocket" style="color:#e47637;"></i> LIGHT INTENSITY</p>
+        <p><span class="reading"><span id="pres"></span></span></p>
+    </div>
+  </div>
+    <script src="scripts/auth.js"></script>
+    <script src="scripts/index.js"></script>
+  </body>
+</html>

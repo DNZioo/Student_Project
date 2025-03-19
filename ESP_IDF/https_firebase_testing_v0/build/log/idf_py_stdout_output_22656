@@ -1,0 +1,2783 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RQ�U�I����0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xeeC�,k�E���0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (30) boot: ESP-IDF v5.3.1-395-g707d097b01 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Nov 26 2024 23:14:03[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2abd0h (175056) map[0m
+[0;32mI (165) esp_image: segment 1: paddr=0003abf8 vaddr=3ffb0000 size=03f78h ( 16248) load[0m
+[0;32mI (171) esp_image: segment 2: paddr=0003eb78 vaddr=40080000 size=014a0h (  5280) load[0m
+[0;32mI (173) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a7fdch (688092) map[0m
+[0;32mI (415) esp_image: segment 4: paddr=000e8004 vaddr=400814a0 size=17350h ( 95056) load[0m
+[0;32mI (464) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (464) boot: Disabling RNG early entropy source...[0m
+[0;32mI (477) cpu_start: Multicore app[0m
+[0;32mI (486) cpu_start: Pro cpu start user code[0m
+[0;32mI (486) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (486) app_init: Application information:[0m
+[0;32mI (489) app_init: Project name:     https_firebase_testing[0m
+[0;32mI (495) app_init: App version:      1[0m
+[0;32mI (499) app_init: Compile time:     Dec  2 2024 20:54:31[0m
+[0;32mI (505) app_init: ELF file SHA256:  fe9fc91d5...[0m
+[0;32mI (511) app_init: ESP-IDF:          v5.3.1-395-g707d097b01[0m
+[0;32mI (517) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (521) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (526) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (531) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (539) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (544) heap_init: At 3FFB87E0 len 00027820 (158 KiB): DRAM[0m
+[0;32mI (551) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (557) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (564) heap_init: At 400987F0 len 00007810 (30 KiB): IRAM[0m
+[0;32mI (571) spi_flash: detected chip: generic[0m
+[0;32mI (574) spi_flash: flash io: dio[0m
+[0;33mW (578) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (592) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (603) main_task: Started on CPU0[0m
+[0;32mI (613) main_task: Calling app_main()[0m
+[0;32mI (613) WiFi: Starting application...[0m
+[0;32mI (643) wifi:wifi driver task: 3ffc07f0, prio:23, stack:6656, core=0[0m
+[0;32mI (653) wifi:wifi firmware version: 6f4dea5[0m
+[0;32mI (653) wifi:wifi certification version: v7.0[0m
+[0;32mI (653) wifi:config NVS flash: enabled[0m
+[0;32mI (653) wifi:config nano formating: disabled[0m
+[0;32mI (653) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (663) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (663) wifi:Init management short buffer num: 32[0m
+[0;32mI (673) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (673) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (683) wifi:Init static rx buffer num: 10[0m
+[0;32mI (683) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (683) wifi_init: rx ba win: 6[0m
+[0;32mI (693) wifi_init: accept mbox: 6[0m
+[0;32mI (693) wifi_init: tcpip mbox: 32[0m
+[0;32mI (693) wifi_init: udp mbox: 6[0m
+[0;32mI (703) wifi_init: tcp mbox: 6[0m
+[0;32mI (703) wifi_init: tcp tx win: 5760[0m
+[0;32mI (713) wifi_init: tcp rx win: 5760[0m
+[0;32mI (713) wifi_init: tcp mss: 1440[0m
+[0;32mI (713) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (723) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (733) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (733) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+[0;32mI (823) wifi:mode : sta (4c:11:ae:65:b6:10)[0m
+[0;32mI (823) wifi:enable tsf[0m
+[0;32mI (833) WiFi: Connecting to Wi-Fi...[0m
+[0;32mI (843) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (843) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (853) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (853) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (893) wifi:connected with MrBlack, aid = 32, channel 6, BW20, bssid = b2:62:8b:e1:b1:38[0m
+[0;32mI (893) wifi:security: WPA2-PSK, phy: bgn, rssi: -55[0m
+[0;32mI (893) wifi:pm start, type: 1[0m
+
+[0;32mI (893) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (923) wifi:<ba-add>idx:0 (ifx:0, b2:62:8b:e1:b1:38), tid:5, ssn:2, winSize:64[0m
+[0;32mI (973) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1903) esp_netif_handlers: sta ip: 192.168.0.96, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (1903) WiFi: Got IP: 192.168.0.96[0m
+[0;32mI (1903) WiFi: Wi-Fi connected.[0m
+[0;32mI (1903) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1933) DHT_SENSOR: Humidity: 74.7%, Temp: 29.8C[0m
+[0;32mI (1943) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (1953) wifi:<ba-add>idx:1 (ifx:0, b2:62:8b:e1:b1:38), tid:0, ssn:0, winSize:64[0m
+[0;32mI (3903) main_task: Returned from app_main()[0m
+[0;32mI (3953) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (3953) LED_TASK: Received: ���?���?\��
+[0;31mE (3953) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (4263) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (4263) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (4273) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":74.6999969482422,"temperature":29.799999237060547}[0m
+[0;32mI (4283) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (5313) DHT_SENSOR: Humidity: 74.9%, Temp: 29.7C[0m
+[0;32mI (5323) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (7633) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":74.9000015258789,"temperature":29.700000762939453}[0m
+[0;32mI (7633) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (7633) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (7643) LED_TASK: Received: �n�?���?���
+[0;32mI (7643) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;31mE (7653) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (7653) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (8663) DHT_SENSOR: Humidity: 74.9%, Temp: 29.8C[0m
+[0;32mI (8673) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (10913) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (10913) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (10923) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":74.9000015258789,"temperature":29.799999237060547}[0m
+[0;32mI (10923) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (11213) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (11213) LED_TASK: Received: ���?���?���
+[0;31mE (11213) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (11953) DHT_SENSOR: Humidity: 75.0%, Temp: 29.7C[0m
+[0;32mI (11963) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (14163) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (14163) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (14173) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75,"temperature":29.700000762939453}[0m
+[0;32mI (14173) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (15213) DHT_SENSOR: Humidity: 74.9%, Temp: 29.7C[0m
+[0;32mI (15223) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (15243) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (15243) LED_TASK: Received: ���?���?���
+[0;31mE (15243) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (17423) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (17433) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (17433) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":74.9000015258789,"temperature":29.700000762939453}[0m
+[0;32mI (17443) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (18443) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (18473) DHT_SENSOR: Humidity: 74.9%, Temp: 29.7C[0m
+[0;32mI (18913) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (18923) LED_TASK: Received: ��?���?���
+[0;31mE (18923) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (20633) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":74.9000015258789,"temperature":29.700000762939453}[0m
+[0;32mI (20633) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (20663) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (20673) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (21663) DHT_SENSOR: Humidity: 75.0%, Temp: 29.7C[0m
+[0;32mI (21673) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (22583) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (22583) LED_TASK: Received: T��?��?l��[0m
+[0;31mE (22583) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (23703) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (23713) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (23723) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75,"temperature":29.700000762939453}[0m
+[0;32mI (23723) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (24723) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (24753) DHT_SENSOR: Humidity: 75.0%, Temp: 29.7C[0m
+[0;32mI (26323) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (26323) LED_TASK: Received: ��?���?h"�
+[0;31mE (26323) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (26983) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75,"temperature":29.700000762939453}[0m
+[0;32mI (26983) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (26993) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (26993) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (28023) DHT_SENSOR: Humidity: 75.1%, Temp: 29.7C[0m
+[0;32mI (28033) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (30053) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (30053) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (30093) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (30093) LED_TASK: Received: x��?��?H[�[0m
+[0;31mE (30093) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (30383) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.0999984741211,"temperature":29.700000762939453}[0m
+[0;32mI (30383) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (31063) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (31413) DHT_SENSOR: Humidity: 75.1%, Temp: 29.7C[0m
+[0;32mI (32953) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (32953) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (33343) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.0999984741211,"temperature":29.700000762939453}[0m
+[0;32mI (33343) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (33643) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (33643) LED_TASK: Received: ���?���?D��
+[0;31mE (33643) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (33963) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (34373) DHT_SENSOR: Humidity: 75.2%, Temp: 29.6C[0m
+[0;32mI (35733) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (35743) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (36113) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.1999969482422,"temperature":29.600000381469727}[0m
+[0;32mI (36113) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (36753) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (37143) DHT_SENSOR: Humidity: 75.2%, Temp: 29.7C[0m
+[0;32mI (37203) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (37203) LED_TASK: Received: ��?���?�n�
+[0;31mE (37203) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (38553) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (38553) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (38873) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.1999969482422,"temperature":29.700000762939453}[0m
+[0;32mI (38873) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (39563) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (39903) DHT_SENSOR: Humidity: 75.2%, Temp: 29.7C[0m
+[0;32mI (40783) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (40783) LED_TASK: Received: ��?���?���
+[0;31mE (40783) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (41423) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (41433) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (41733) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.1999969482422,"temperature":29.700000762939453}[0m
+[0;32mI (41733) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (42433) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (42763) DHT_SENSOR: Humidity: 75.3%, Temp: 29.7C[0m
+[0;32mI (44353) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (44353) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (44603) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (44603) LED_TASK: Received: ���?���?P��
+[0;31mE (44603) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (44663) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.3000030517578,"temperature":29.700000762939453}[0m
+[0;32mI (44663) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (45363) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (45693) DHT_SENSOR: Humidity: 75.3%, Temp: 29.6C[0m
+[0;32mI (47063) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (47063) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (47413) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.3000030517578,"temperature":29.600000381469727}[0m
+[0;32mI (47413) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (48073) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (48143) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (48143) LED_TASK: Received: ���?���?X��
+[0;31mE (48143) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (48443) DHT_SENSOR: Humidity: 75.3%, Temp: 29.6C[0m
+[0;32mI (49853) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (49853) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (50133) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.3000030517578,"temperature":29.600000381469727}[0m
+[0;32mI (50133) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (50863) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (51163) DHT_SENSOR: Humidity: 75.3%, Temp: 29.6C[0m
+[0;32mI (51673) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (51673) LED_TASK: Received: ���?���?�!�
+[0;31mE (51673) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (52583) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (52583) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (52903) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.3000030517578,"temperature":29.600000381469727}[0m
+[0;32mI (52903) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (53593) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (53933) DHT_SENSOR: Humidity: 75.3%, Temp: 29.6C[0m
+[0;32mI (55453) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (55453) LED_TASK: Received: ��?���?`��
+[0;31mE (55453) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (55763) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (55763) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (55783) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.3000030517578,"temperature":29.600000381469727}[0m
+[0;32mI (55783) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (56773) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (56813) DHT_SENSOR: Humidity: 75.3%, Temp: 29.7C[0m
+[0;32mI (58833) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (58833) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (58883) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.3000030517578,"temperature":29.700000762939453}[0m
+[0;32mI (58883) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (59143) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (59143) LED_TASK: Received: ���?���?���
+[0;31mE (59143) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (59843) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (59913) DHT_SENSOR: Humidity: 75.3%, Temp: 29.7C[0m
+[0;32mI (61903) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (61903) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (61913) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.3000030517578,"temperature":29.700000762939453}[0m
+[0;32mI (61923) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (62723) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (62723) LED_TASK: Received: ���?���?���
+[0;31mE (62723) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (62953) DHT_SENSOR: Humidity: 75.3%, Temp: 29.6C[0m
+[0;32mI (62963) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (65083) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.3000030517578,"temperature":29.600000381469727}[0m
+[0;32mI (65083) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (65083) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (65093) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (66123) DHT_SENSOR: Humidity: 75.3%, Temp: 29.6C[0m
+[0;32mI (66133) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (66263) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (66263) LED_TASK: Received: ���?���?��
+[0;31mE (66263) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (68283) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (68293) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (68293) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.3000030517578,"temperature":29.600000381469727}[0m
+[0;32mI (68303) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (69303) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (69333) DHT_SENSOR: Humidity: 75.4%, Temp: 29.6C[0m
+[0;32mI (69803) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (69803) LED_TASK: Received: ���?���?t1�
+[0;31mE (69803) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (71433) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.4000015258789,"temperature":29.600000381469727}[0m
+[0;32mI (71433) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (71443) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (71443) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (72473) DHT_SENSOR: Humidity: 75.4%, Temp: 29.6C[0m
+[0;32mI (72483) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (73583) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (73583) LED_TASK: Received: ��?���?���
+[0;31mE (73583) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (74603) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.4000015258789,"temperature":29.600000381469727}[0m
+[0;32mI (74603) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (74613) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (74613) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (75643) DHT_SENSOR: Humidity: 75.5%, Temp: 29.7C[0m
+[0;32mI (75653) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (77473) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (77473) LED_TASK: Received: ��?���? ��
+[0;31mE (77473) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (77813) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (77813) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (77843) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.5,"temperature":29.700000762939453}[0m
+[0;32mI (77843) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (78823) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (78873) DHT_SENSOR: Humidity: 75.5%, Temp: 29.6C[0m
+[0;32mI (80963) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (80963) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (81063) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.5,"temperature":29.600000381469727}[0m
+[0;32mI (81063) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (81263) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (81263) LED_TASK: Received: ���?���?���
+[0;31mE (81263) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (81973) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (82103) DHT_SENSOR: Humidity: 75.5%, Temp: 29.6C[0m
+[0;32mI (84123) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (84123) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (85133) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;31mE (85243) esp-tls-mbedtls: mbedtls_ssl_setup returned -0x7F00[0m
+[0;31mE (85243) esp-tls: create_ssl_handle failed[0m
+[0;31mE (85243) esp-tls: Failed to open new connection[0m
+[0;31mE (85243) transport_base: Failed to open a new connection[0m
+[0;31mE (85253) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (85263) HTTP_CLIENT: Failed to upload BH1750 data.[0m
+[0;32mI (85453) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (85463) LED_TASK: Received: ���?���?��
+[0;31mE (85463) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (86073) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.5,"temperature":29.600000381469727}[0m
+[0;32mI (86073) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (86263) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (87113) DHT_SENSOR: Humidity: 75.4%, Temp: 29.6C[0m
+[0;32mI (87923) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (87923) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (88833) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.4000015258789,"temperature":29.600000381469727}[0m
+[0;32mI (88843) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (88933) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (89093) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (89103) LED_TASK: Received: ���?���?X��
+[0;31mE (89103) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (89883) DHT_SENSOR: Humidity: 75.4%, Temp: 29.7C[0m
+[0;32mI (90713) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (90713) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (91733) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (91923) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.4000015258789,"temperature":29.700000762939453}[0m
+[0;32mI (91923) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (92953) DHT_SENSOR: Humidity: 75.5%, Temp: 29.6C[0m
+[0;32mI (93063) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (93063) LED_TASK: Received: ��?���?[0m
+[0;31mE (93063) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (93563) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (93563) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (94593) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (94963) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.5,"temperature":29.600000381469727}[0m
+[0;32mI (94963) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (95993) DHT_SENSOR: Humidity: 75.5%, Temp: 29.6C[0m
+[0;32mI (96943) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (96943) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (96973) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (96973) LED_TASK: Received: T��?��?���[0m
+[0;31mE (96973) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (97643) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.5,"temperature":29.600000381469727}[0m
+[0;32mI (97643) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (97963) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (98683) DHT_SENSOR: Humidity: 75.4%, Temp: 29.6C[0m
+[0;32mI (99693) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (99693) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (100513) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.4000015258789,"temperature":29.600000381469727}[0m
+[0;32mI (100513) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (100563) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (100563) LED_TASK: Received: ���?���?h��
+[0;31mE (100563) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (100703) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (101553) DHT_SENSOR: Humidity: 75.4%, Temp: 29.6C[0m
+[0;32mI (102473) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (102473) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (103403) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.4000015258789,"temperature":29.600000381469727}[0m
+[0;32mI (103403) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (103503) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (104403) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (104403) LED_TASK: Received: ��?���?$��
+[0;31mE (104403) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (104443) DHT_SENSOR: Humidity: 75.4%, Temp: 29.7C[0m
+[0;32mI (105153) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (105153) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (106143) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.4000015258789,"temperature":29.700000762939453}[0m
+[0;32mI (106143) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (106183) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (107173) DHT_SENSOR: Humidity: 75.4%, Temp: 29.7C[0m
+[0;32mI (107813) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (107813) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (108063) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (108063) LED_TASK: Received: ���?���?,��
+[0;31mE (108063) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (108813) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.4000015258789,"temperature":29.700000762939453}[0m
+[0;32mI (108813) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (108843) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (109843) DHT_SENSOR: Humidity: 75.5%, Temp: 29.7C[0m
+[0;32mI (110473) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (110473) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (111473) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.5,"temperature":29.700000762939453}[0m
+[0;32mI (111483) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (111483) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (111773) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (111773) LED_TASK: Received: ���?���?[0m
+[0;31mE (111773) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (112513) DHT_SENSOR: Humidity: 75.4%, Temp: 29.7C[0m
+[0;32mI (113023) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (113023) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (114053) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (114173) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.4000015258789,"temperature":29.700000762939453}[0m
+[0;32mI (114173) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (115203) DHT_SENSOR: Humidity: 75.4%, Temp: 29.7C[0m
+[0;32mI (115323) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (115323) LED_TASK: Received: ���?���?���
+[0;31mE (115323) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (115693) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (115693) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (116723) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (116893) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.4000015258789,"temperature":29.700000762939453}[0m
+[0;32mI (116893) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (117923) DHT_SENSOR: Humidity: 75.4%, Temp: 29.7C[0m
+[0;32mI (118353) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (118353) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (118903) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (118903) LED_TASK: Received: ��?���?��
+[0;31mE (118903) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (119383) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (119473) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.4000015258789,"temperature":29.700000762939453}[0m
+[0;32mI (119473) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (120523) DHT_SENSOR: Humidity: 75.4%, Temp: 29.7C[0m
+[0;32mI (120863) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (120863) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (121873) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (122033) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.4000015258789,"temperature":29.700000762939453}[0m
+[0;32mI (122033) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (122633) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (122633) LED_TASK: Received: <j�?��?|g�
+[0;31mE (122633) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (123063) DHT_SENSOR: Humidity: 75.3%, Temp: 29.7C[0m
+[0;32mI (123443) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (123453) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (124463) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (124603) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.3000030517578,"temperature":29.700000762939453}[0m
+[0;32mI (124603) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (125633) DHT_SENSOR: Humidity: 75.3%, Temp: 29.7C[0m
+[0;32mI (126083) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (126083) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (126313) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (126313) LED_TASK: Received: ��?���?���
+[0;31mE (126313) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (127113) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (127233) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.3000030517578,"temperature":29.700000762939453}[0m
+[0;32mI (127233) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (128273) DHT_SENSOR: Humidity: 75.3%, Temp: 29.7C[0m
+[0;31mE (128823) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (128823) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (128823) esp-tls: Failed to open new connection[0m
+[0;31mE (128823) transport_base: Failed to open a new connection[0m
+[0;31mE (128843) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (128843) HTTP_CLIENT: Failed to upload DHT data.[0m
+[0;32mI (129283) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (129283) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (129863) DHT_SENSOR: Humidity: 75.3%, Temp: 29.7C[0m
+[0;32mI (130203) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (130203) LED_TASK: Received: ���?���?��
+[0;31mE (130203) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (130303) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (131533) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.3000030517578,"temperature":29.700000762939453}[0m
+[0;32mI (131543) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (132053) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (132053) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (132573) DHT_SENSOR: Humidity: 75.3%, Temp: 29.7C[0m
+[0;32mI (133053) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (133763) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (133763) LED_TASK: Received: ��?���?\��
+[0;31mE (133763) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (134403) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.3000030517578,"temperature":29.700000762939453}[0m
+[0;32mI (134413) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (134713) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (134713) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (135443) DHT_SENSOR: Humidity: 75.3%, Temp: 29.7C[0m
+[0;32mI (135723) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;31mE (136753) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (136753) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (136753) esp-tls: Failed to open new connection[0m
+[0;31mE (136763) transport_base: Failed to open a new connection[0m
+[0;31mE (136773) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (136773) LED_TASK: HTTP GET request failed.[0m
+[0;32mI (137173) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.3000030517578,"temperature":29.700000762939453}[0m
+[0;32mI (137183) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (137483) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (137483) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (138213) DHT_SENSOR: Humidity: 75.2%, Temp: 29.7C[0m
+[0;32mI (138483) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (140143) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.1999969482422,"temperature":29.700000762939453}[0m
+[0;32mI (140143) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (140443) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (140443) LED_TASK: Received: ���?���?@��
+[0;31mE (140443) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (140473) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (140473) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (141183) DHT_SENSOR: Humidity: 75.2%, Temp: 29.8C[0m
+[0;32mI (141473) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (142913) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.1999969482422,"temperature":29.799999237060547}[0m
+[0;32mI (142913) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (143223) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (143223) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (143943) DHT_SENSOR: Humidity: 75.2%, Temp: 29.8C[0m
+[0;32mI (144093) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (144093) LED_TASK: Received: ���?���?\��
+[0;31mE (144093) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (144233) BH1750_SENSOR: Light Intensity: 1 lux[0m
+[0;32mI (146123) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":1}[0m
+[0;32mI (146123) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (147133) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (147513) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (147523) LED_TASK: Received: P*�?��?\��[0m
+[0;31mE (147523) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (147593) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.1999969482422,"temperature":29.799999237060547}[0m
+[0;32mI (147593) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (148643) DHT_SENSOR: Humidity: 75.1%, Temp: 29.7C[0m
+[0;32mI (148663) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (148663) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (149673) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (150123) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.0999984741211,"temperature":29.700000762939453}[0m
+[0;32mI (150123) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (151153) DHT_SENSOR: Humidity: 75.2%, Temp: 29.8C[0m
+[0;32mI (151173) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (151173) LED_TASK: Received: ��?���?�/�
+[0;31mE (151173) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (151273) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (151273) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (152283) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (152773) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.1999969482422,"temperature":29.799999237060547}[0m
+[0;32mI (152773) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;31mE (153833) dht: HIGH bit timeout[0m
+[0;31mE (153833) DHT_SENSOR: Failed to read DHT sensor.[0m
+[0;32mI (154173) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (154173) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (154783) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (154783) LED_TASK: Received: ���?���?\��
+[0;31mE (154783) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (154853) DHT_SENSOR: Humidity: 75.2%, Temp: 29.7C[0m
+[0;32mI (155173) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (156623) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.1999969482422,"temperature":29.700000762939453}[0m
+[0;32mI (156623) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (156953) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (156953) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (157663) DHT_SENSOR: Humidity: 75.2%, Temp: 29.7C[0m
+[0;32mI (157953) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (158373) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (158373) LED_TASK: Received: ��?���?��
+[0;31mE (158373) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (159403) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.1999969482422,"temperature":29.700000762939453}[0m
+[0;32mI (159403) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (159703) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (159703) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;31mE (160433) dht: HIGH bit timeout[0m
+[0;31mE (160433) DHT_SENSOR: Failed to read DHT sensor.[0m
+[0;32mI (160713) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (161473) DHT_SENSOR: Humidity: 75.2%, Temp: 29.8C[0m
+[0;32mI (162063) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (162063) LED_TASK: Received: $��?��?o�[0m
+[0;31mE (162063) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (162423) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (162423) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (163383) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.1999969482422,"temperature":29.799999237060547}[0m
+[0;32mI (163383) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (163443) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (164413) DHT_SENSOR: Humidity: 75.1%, Temp: 29.8C[0m
+[0;32mI (165343) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (165343) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (165693) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (165693) LED_TASK: Received: �x�?���?4#�
+[0;31mE (165693) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (166043) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.0999984741211,"temperature":29.799999237060547}[0m
+[0;32mI (166043) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (166353) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (167093) DHT_SENSOR: Humidity: 75.1%, Temp: 29.8C[0m
+[0;32mI (168153) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (168153) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (168913) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.0999984741211,"temperature":29.799999237060547}[0m
+[0;32mI (168913) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (169163) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (169233) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (169233) LED_TASK: Received: ���?���?d��
+[0;31mE (169233) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (169953) DHT_SENSOR: Humidity: 75.2%, Temp: 29.8C[0m
+[0;32mI (170873) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (170873) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (171683) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.1999969482422,"temperature":29.799999237060547}[0m
+[0;32mI (171683) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (171903) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (172723) DHT_SENSOR: Humidity: 75.2%, Temp: 29.8C[0m
+[0;32mI (172863) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (172873) LED_TASK: Received: ?�?T�?87�
+[0;31mE (172873) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (173553) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (173553) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (174443) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.1999969482422,"temperature":29.799999237060547}[0m
+[0;32mI (174443) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (174583) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (175473) DHT_SENSOR: Humidity: 75.1%, Temp: 29.8C[0m
+[0;31mE (175923) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (175923) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (175923) esp-tls: Failed to open new connection[0m
+[0;31mE (175933) transport_base: Failed to open a new connection[0m
+[0;31mE (175943) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (175943) HTTP_CLIENT: Failed to upload DHT data.[0m
+[0;32mI (176293) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (176293) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (176593) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (176593) LED_TASK: Received: ���?���?���
+[0;31mE (176593) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (176973) DHT_SENSOR: Humidity: 75.1%, Temp: 29.7C[0m
+[0;32mI (177303) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (178693) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.0999984741211,"temperature":29.700000762939453}[0m
+[0;32mI (178703) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (179063) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (179063) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (179733) DHT_SENSOR: Humidity: 75.1%, Temp: 29.8C[0m
+[0;32mI (180063) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (180103) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (180103) LED_TASK: Received: ��?���?���
+[0;31mE (180103) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (181513) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.0999984741211,"temperature":29.799999237060547}[0m
+[0;32mI (181513) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (181833) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (181833) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (182553) DHT_SENSOR: Humidity: 75.1%, Temp: 29.8C[0m
+[0;32mI (182843) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (183723) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (183723) LED_TASK: Received: ��?���?���
+[0;31mE (183723) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (184383) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.0999984741211,"temperature":29.799999237060547}[0m
+[0;32mI (184383) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (184703) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (184703) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (185423) DHT_SENSOR: Humidity: 75.1%, Temp: 29.8C[0m
+[0;32mI (185703) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;31mE (186273) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (186273) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (186273) esp-tls: Failed to open new connection[0m
+[0;31mE (186283) transport_base: Failed to open a new connection[0m
+[0;31mE (186293) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (186293) LED_TASK: HTTP GET request failed.[0m
+[0;32mI (187143) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.0999984741211,"temperature":29.799999237060547}[0m
+[0;32mI (187143) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (187463) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (187463) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (188173) DHT_SENSOR: Humidity: 75.1%, Temp: 29.8C[0m
+[0;32mI (188473) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (190013) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (190013) LED_TASK: Received: ��?���?D>�
+[0;31mE (190013) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (190343) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.0999984741211,"temperature":29.799999237060547}[0m
+[0;32mI (190343) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (190393) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (190393) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (191373) DHT_SENSOR: Humidity: 75.1%, Temp: 29.8C[0m
+[0;32mI (191403) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (193593) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.0999984741211,"temperature":29.799999237060547}[0m
+[0;32mI (193593) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (193613) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (193623) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (193643) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (193643) LED_TASK: Received: ���?���?p��
+[0;31mE (193643) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (194623) DHT_SENSOR: Humidity: 75.0%, Temp: 29.8C[0m
+[0;32mI (194633) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (196773) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75,"temperature":29.799999237060547}[0m
+[0;32mI (196773) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (197163) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (197163) LED_TASK: Received: ���?���?[0m
+[0;31mE (197163) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (197483) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (197483) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (197803) DHT_SENSOR: Humidity: 75.1%, Temp: 29.8C[0m
+[0;32mI (198513) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (199533) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.0999984741211,"temperature":29.799999237060547}[0m
+[0;32mI (199533) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (200143) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (200143) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (200563) DHT_SENSOR: Humidity: 75.0%, Temp: 29.8C[0m
+[0;32mI (200713) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (200713) LED_TASK: Received: ���?���?���
+[0;31mE (200713) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (201173) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (202253) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75,"temperature":29.799999237060547}[0m
+[0;32mI (202253) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (202803) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (202803) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (203283) DHT_SENSOR: Humidity: 75.1%, Temp: 29.8C[0m
+[0;32mI (203843) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (204243) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (204243) LED_TASK: Received: 5�?��?�4�[0m
+[0;31mE (204243) LED_TASK: 'state' not found or invalid in the JSON.[0m
+[0;32mI (204903) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.0999984741211,"temperature":29.799999237060547}[0m
+[0;32mI (204903) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (205573) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (205573) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (205933) DHT_SENSOR: Humidity: 75.0%, Temp: 29.8C[0m
+[0;32mI (206603) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (207633) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75,"temperature":29.799999237060547}[0m
+[0;32mI (207633) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (207953) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (207953) LED_TASK: Received: ���?���?���
+[0;31mE (207953) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (208253) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (208263) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (208663) DHT_SENSOR: Humidity: 75.0%, Temp: 29.8C[0m
+[0;32mI (209273) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (210403) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75,"temperature":29.799999237060547}[0m
+[0;32mI (210403) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (210953) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (210953) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (211433) DHT_SENSOR: Humidity: 75.0%, Temp: 29.9C[0m
+[0;32mI (211473) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (211473) LED_TASK: Received: ���?���?��
+[0;31mE (211473) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (211973) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (213093) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75,"temperature":29.899999618530273}[0m
+[0;32mI (213093) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (213563) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (213563) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (214123) DHT_SENSOR: Humidity: 75.0%, Temp: 29.8C[0m
+[0;32mI (214593) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (214993) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (214993) LED_TASK: Received: x{�?��?4��[0m
+[0;31mE (214993) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (215813) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75,"temperature":29.799999237060547}[0m
+[0;32mI (215813) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (216223) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (216223) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (216843) DHT_SENSOR: Humidity: 75.0%, Temp: 29.8C[0m
+[0;32mI (217233) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (218783) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (218793) LED_TASK: Received: ��?���?[0m
+[0;31mE (218793) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (218873) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75,"temperature":29.799999237060547}[0m
+[0;32mI (218873) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (219123) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (219123) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (219903) DHT_SENSOR: Humidity: 75.0%, Temp: 29.8C[0m
+[0;32mI (220133) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (221653) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75,"temperature":29.799999237060547}[0m
+[0;32mI (221653) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;31mE (221763) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (221763) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (221763) esp-tls: Failed to open new connection[0m
+[0;31mE (221773) transport_base: Failed to open a new connection[0m
+[0;31mE (221783) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (221783) LED_TASK: HTTP GET request failed.[0m
+[0;32mI (221963) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (221963) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (222683) DHT_SENSOR: Humidity: 75.0%, Temp: 29.9C[0m
+[0;32mI (222973) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (224413) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75,"temperature":29.899999618530273}[0m
+[0;32mI (224413) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (224733) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (224733) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (225343) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (225343) LED_TASK: Received: ���?���?0��
+[0;31mE (225343) LED_TASK: Failed to parse JSON.[0m
+[0;31mE (225453) dht: Initialization error, problem in phase 'B'[0m
+[0;31mE (225453) DHT_SENSOR: Failed to read DHT sensor.[0m
+[0;32mI (225743) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (226483) DHT_SENSOR: Humidity: 75.0%, Temp: 29.9C[0m
+[0;32mI (227403) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (227403) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (228213) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75,"temperature":29.899999618530273}[0m
+[0;32mI (228213) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (228443) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (228823) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (228823) LED_TASK: Received: �
+[0;31mE (228823) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (229253) DHT_SENSOR: Humidity: 75.1%, Temp: 29.9C[0m
+[0;32mI (230163) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (230163) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (230863) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.0999984741211,"temperature":29.899999618530273}[0m
+[0;32mI (230863) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (231193) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (231903) DHT_SENSOR: Humidity: 75.1%, Temp: 29.8C[0m
+[0;32mI (232293) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (232293) LED_TASK: Received: �]�?���?�
+[0;31mE (232293) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (232973) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (232973) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (233633) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.0999984741211,"temperature":29.799999237060547}[0m
+[0;32mI (233633) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (233983) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (234673) DHT_SENSOR: Humidity: 75.1%, Temp: 29.8C[0m
+[0;31mE (235123) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (235123) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (235123) esp-tls: Failed to open new connection[0m
+[0;31mE (235123) transport_base: Failed to open a new connection[0m
+[0;31mE (235143) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (235143) HTTP_CLIENT: Failed to upload DHT data.[0m
+[0;32mI (235683) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (235683) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (235983) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (235993) LED_TASK: Received: ���?���?���
+[0;31mE (235993) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (236163) DHT_SENSOR: Humidity: 75.1%, Temp: 29.9C[0m
+[0;32mI (236713) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (237963) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.0999984741211,"temperature":29.899999618530273}[0m
+[0;32mI (237963) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (238453) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (238453) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (238993) DHT_SENSOR: Humidity: 75.1%, Temp: 29.8C[0m
+[0;32mI (239463) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (239523) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (239523) LED_TASK: Received: ���?���?T��
+[0;31mE (239523) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (240713) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.0999984741211,"temperature":29.799999237060547}[0m
+[0;32mI (240713) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (241443) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (241443) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (241743) DHT_SENSOR: Humidity: 75.1%, Temp: 29.8C[0m
+[0;32mI (242453) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;31mE (243023) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (243033) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (243033) esp-tls: Failed to open new connection[0m
+[0;31mE (243033) transport_base: Failed to open a new connection[0m
+[0;31mE (243063) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (243063) HTTP_CLIENT: Failed to upload BH1750 data.[0m
+[0;32mI (243243) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (243243) LED_TASK: Received: ��?���?t�
+[0;31mE (243243) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (243873) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.0999984741211,"temperature":29.799999237060547}[0m
+[0;32mI (243873) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (244063) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (244913) DHT_SENSOR: Humidity: 75.1%, Temp: 29.8C[0m
+[0;32mI (245723) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (245723) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (246633) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.0999984741211,"temperature":29.799999237060547}[0m
+[0;32mI (246643) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (246733) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (246913) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (246913) LED_TASK: Received: ���?���?,��
+[0;31mE (246913) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (247673) DHT_SENSOR: Humidity: 75.1%, Temp: 29.8C[0m
+[0;32mI (248393) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (248393) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (249403) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.0999984741211,"temperature":29.799999237060547}[0m
+[0;32mI (249403) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (249423) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (250433) DHT_SENSOR: Humidity: 75.2%, Temp: 29.8C[0m
+[0;32mI (250593) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (250593) LED_TASK: Received: ��?���?���
+[0;31mE (250593) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (251163) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (251163) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (252063) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.1999969482422,"temperature":29.799999237060547}[0m
+[0;32mI (252063) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (252193) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (253093) DHT_SENSOR: Humidity: 75.2%, Temp: 29.8C[0m
+[0;32mI (254033) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (254033) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (254343) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (254353) LED_TASK: Received: ���?���?,��
+[0;31mE (254353) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (254623) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.1999969482422,"temperature":29.799999237060547}[0m
+[0;32mI (254623) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (255043) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (255663) DHT_SENSOR: Humidity: 75.2%, Temp: 29.8C[0m
+[0;32mI (256743) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (256743) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (257283) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.1999969482422,"temperature":29.799999237060547}[0m
+[0;32mI (257283) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (257753) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (257863) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (257873) LED_TASK: Received: ���?���?4��
+[0;31mE (257873) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (258333) DHT_SENSOR: Humidity: 75.2%, Temp: 29.8C[0m
+[0;32mI (259683) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (259683) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (260033) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.1999969482422,"temperature":29.799999237060547}[0m
+[0;32mI (260033) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (260693) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (261063) DHT_SENSOR: Humidity: 75.3%, Temp: 29.8C[0m
+[0;32mI (261483) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (261483) LED_TASK: Received: ��?���?d��
+[0;31mE (261483) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (262513) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (262513) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (262823) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.3000030517578,"temperature":29.799999237060547}[0m
+[0;32mI (262823) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (263523) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (263853) DHT_SENSOR: Humidity: 75.3%, Temp: 29.8C[0m
+[0;31mE (264613) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (264613) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (264613) esp-tls: Failed to open new connection[0m
+[0;31mE (264613) transport_base: Failed to open a new connection[0m
+[0;31mE (264633) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (264633) HTTP_CLIENT: Failed to upload DHT data.[0m
+[0;32mI (265373) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (265383) LED_TASK: Received:  ��?��?�d�[0m
+[0;31mE (265383) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (265453) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (265453) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (265653) DHT_SENSOR: Humidity: 75.3%, Temp: 29.8C[0m
+[0;32mI (266483) BH1750_SENSOR: Light Intensity: 1 lux[0m
+[0;32mI (267423) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.3000030517578,"temperature":29.799999237060547}[0m
+[0;32mI (267423) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (268243) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":1}[0m
+[0;32mI (268243) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (268493) DHT_SENSOR: Humidity: 75.3%, Temp: 29.8C[0m
+[0;32mI (268893) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (268893) LED_TASK: Received: x��?��?t�[0m
+[0;31mE (268893) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (269273) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (270453) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.3000030517578,"temperature":29.799999237060547}[0m
+[0;32mI (270453) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (271013) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (271013) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (271483) DHT_SENSOR: Humidity: 75.3%, Temp: 29.8C[0m
+[0;32mI (272043) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (272443) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (272443) LED_TASK: Received: 0��?��?0A�[0m
+[0;31mE (272443) LED_TASK: 'state' not found or invalid in the JSON.[0m
+[0;32mI (273113) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.3000030517578,"temperature":29.799999237060547}[0m
+[0;32mI (273113) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (273773) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (273773) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (274143) DHT_SENSOR: Humidity: 75.3%, Temp: 29.8C[0m
+[0;32mI (274803) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;31mE (275273) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (275273) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (275273) esp-tls: Failed to open new connection[0m
+[0;31mE (275283) transport_base: Failed to open a new connection[0m
+[0;31mE (275293) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (275293) HTTP_CLIENT: Failed to upload BH1750 data.[0m
+[0;32mI (275823) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.3000030517578,"temperature":29.799999237060547}[0m
+[0;32mI (275823) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (276133) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (276133) LED_TASK: Received: ���?���?���
+[0;31mE (276133) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (276293) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (276863) DHT_SENSOR: Humidity: 75.3%, Temp: 29.8C[0m
+[0;32mI (278073) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (278073) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (278483) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.3000030517578,"temperature":29.799999237060547}[0m
+[0;32mI (278483) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (279083) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (279523) DHT_SENSOR: Humidity: 75.4%, Temp: 29.8C[0m
+[0;32mI (279663) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (279663) LED_TASK: Received: ��?���?[0m
+[0;31mE (279663) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (280843) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (280843) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (281153) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.4000015258789,"temperature":29.799999237060547}[0m
+[0;32mI (281153) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (281853) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (282193) DHT_SENSOR: Humidity: 75.3%, Temp: 29.8C[0m
+[0;31mE (282723) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (282723) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (282723) esp-tls: Failed to open new connection[0m
+[0;31mE (282723) transport_base: Failed to open a new connection[0m
+[0;31mE (282753) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (282753) HTTP_CLIENT: Failed to upload DHT data.[0m
+[0;32mI (283253) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (283263) LED_TASK: Received: ��?���?[�
+[0;31mE (283263) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (283603) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (283603) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (283773) DHT_SENSOR: Humidity: 75.4%, Temp: 29.8C[0m
+[0;32mI (284633) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (285363) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.4000015258789,"temperature":29.799999237060547}[0m
+[0;32mI (285363) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (286283) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (286283) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (286433) DHT_SENSOR: Humidity: 75.4%, Temp: 29.8C[0m
+[0;32mI (286783) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (286783) LED_TASK: Received: ���?���?d�
+[0;31mE (286783) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (287303) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (288123) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.4000015258789,"temperature":29.799999237060547}[0m
+[0;32mI (288123) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (288823) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (288823) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;31mE (289183) dht: HIGH bit timeout[0m
+[0;31mE (289183) DHT_SENSOR: Failed to read DHT sensor.[0m
+[0;32mI (289823) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (290203) DHT_SENSOR: Humidity: 75.4%, Temp: 29.8C[0m
+[0;32mI (290243) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (290243) LED_TASK: Received: ,P�?��?(o�
+[0;31mE (290253) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (291593) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (291593) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (291923) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.4000015258789,"temperature":29.799999237060547}[0m
+[0;32mI (291923) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (292603) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (292953) DHT_SENSOR: Humidity: 75.3%, Temp: 29.8C[0m
+[0;31mE (293393) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (293393) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (293393) esp-tls: Failed to open new connection[0m
+[0;31mE (293393) transport_base: Failed to open a new connection[0m
+[0;31mE (293433) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (293433) HTTP_CLIENT: Failed to upload DHT data.[0m
+[0;32mI (293953) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (293953) LED_TASK: Received: X��?��?�X�[0m
+[0;31mE (293953) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (294423) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (294423) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (294453) DHT_SENSOR: Humidity: 75.3%, Temp: 29.8C[0m
+[0;32mI (295443) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (296143) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.3000030517578,"temperature":29.799999237060547}[0m
+[0;32mI (296143) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (297123) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (297123) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (297203) DHT_SENSOR: Humidity: 75.3%, Temp: 29.8C[0m
+[0;32mI (297403) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (297403) LED_TASK: Received: ���?���?L��
+[0;31mE (297403) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (298133) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (298893) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.3000030517578,"temperature":29.799999237060547}[0m
+[0;32mI (298893) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (299603) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (299613) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (299953) DHT_SENSOR: Humidity: 75.3%, Temp: 29.8C[0m
+[0;32mI (300633) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (300983) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (300983) LED_TASK: Received: ��?���?���
+[0;31mE (300983) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (301653) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.3000030517578,"temperature":29.799999237060547}[0m
+[0;32mI (301653) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (302343) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (302343) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (302683) DHT_SENSOR: Humidity: 75.3%, Temp: 29.8C[0m
+[0;32mI (303353) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;31mE (304273) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2880[0m
+[0;32mI (304273) esp-tls-mbedtls: Certificate verified.[0m
+[0;31mE (304273) esp-tls: Failed to open new connection[0m
+[0;31mE (304283) transport_base: Failed to open a new connection[0m
+[0;31mE (304293) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (304293) HTTP_CLIENT: Failed to upload BH1750 data.[0m
+[0;32mI (304603) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (304603) LED_TASK: Received: ,��?��?���[0m
+[0;31mE (304603) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (304903) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.3000030517578,"temperature":29.799999237060547}[0m
+[0;32mI (304913) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (305293) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (305953) DHT_SENSOR: Humidity: 75.3%, Temp: 29.8C[0m
+[0;32mI (307013) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (307013) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (307553) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.3000030517578,"temperature":29.799999237060547}[0m
+[0;32mI (307553) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (308013) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (308143) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (308143) LED_TASK: Received: ���?���?X��
+[0;31mE (308143) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (308583) DHT_SENSOR: Humidity: 75.4%, Temp: 29.8C[0m
+[0;32mI (309823) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (309823) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (310193) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.4000015258789,"temperature":29.799999237060547}[0m
+[0;32mI (310193) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (310823) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (311223) DHT_SENSOR: Humidity: 75.4%, Temp: 29.8C[0m
+[0;32mI (311663) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (311663) LED_TASK: Received: ��?���?p�
+[0;31mE (311663) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (312683) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (312693) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (313003) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.4000015258789,"temperature":29.799999237060547}[0m
+[0;32mI (313003) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (313693) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (314033) DHT_SENSOR: Humidity: 75.5%, Temp: 29.8C[0m
+[0;31mE (314203) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (314203) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (314213) esp-tls: Failed to open new connection[0m
+[0;31mE (314213) transport_base: Failed to open a new connection[0m
+[0;31mE (314223) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (314223) HTTP_CLIENT: Failed to upload BH1750 data.[0m
+[0;32mI (315233) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (315293) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (315293) LED_TASK: Received: ��?���?���
+[0;31mE (315293) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (315673) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.5,"temperature":29.799999237060547}[0m
+[0;32mI (315673) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (316733) DHT_SENSOR: Humidity: 75.5%, Temp: 29.8C[0m
+[0;32mI (316783) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (316783) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (317793) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;31mE (318203) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (318203) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (318213) esp-tls: Failed to open new connection[0m
+[0;31mE (318213) transport_base: Failed to open a new connection[0m
+[0;32mI (318223) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.5,"temperature":29.799999237060547}[0m
+[0;32mI (318233) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;31mE (318243) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (318243) HTTP_CLIENT: Failed to upload BH1750 data.[0m
+[0;32mI (318833) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (318833) LED_TASK: Received: $i�?��?���[0m
+[0;31mE (318833) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (319243) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (319273) DHT_SENSOR: Humidity: 75.5%, Temp: 29.8C[0m
+[0;32mI (321293) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.5,"temperature":29.799999237060547}[0m
+[0;32mI (321293) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (321313) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (321313) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (322343) DHT_SENSOR: Humidity: 75.5%, Temp: 29.8C[0m
+[0;32mI (322353) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (322373) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (322373) LED_TASK: Received: ���?���?X��
+[0;31mE (322373) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (324463) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (324463) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (324473) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.5,"temperature":29.799999237060547}[0m
+[0;32mI (324483) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (325513) DHT_SENSOR: Humidity: 75.6%, Temp: 29.8C[0m
+[0;32mI (325523) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (325893) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (325893) LED_TASK: Received: $��?��?P��[0m
+[0;31mE (325893) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (327533) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (327533) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (327543) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.5999984741211,"temperature":29.799999237060547}[0m
+[0;32mI (327543) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (328583) DHT_SENSOR: Humidity: 75.6%, Temp: 29.8C[0m
+[0;32mI (328593) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;31mE (329543) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (329543) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (329543) esp-tls: Failed to open new connection[0m
+[0;31mE (329553) transport_base: Failed to open a new connection[0m
+[0;31mE (329563) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (329563) HTTP_CLIENT: Failed to upload BH1750 data.[0m
+[0;32mI (329793) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (329793) LED_TASK: Received: �D�?���?l��
+[0;31mE (329793) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (330503) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.5999984741211,"temperature":29.799999237060547}[0m
+[0;32mI (330503) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (330573) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (331533) DHT_SENSOR: Humidity: 75.6%, Temp: 29.8C[0m
+[0;32mI (332163) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (332163) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (333163) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.5999984741211,"temperature":29.799999237060547}[0m
+[0;32mI (333173) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (333193) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (333473) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (333473) LED_TASK: Received: ���?���?��
+[0;31mE (333473) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (334203) DHT_SENSOR: Humidity: 75.6%, Temp: 29.8C[0m
+[0;32mI (335133) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (335133) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (335933) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.5999984741211,"temperature":29.799999237060547}[0m
+[0;32mI (335933) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (336163) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (336983) DHT_SENSOR: Humidity: 75.6%, Temp: 29.8C[0m
+[0;32mI (337113) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (337113) LED_TASK: Received: h��?��?���[0m
+[0;31mE (337113) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (337893) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (337893) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (338593) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.5999984741211,"temperature":29.799999237060547}[0m
+[0;32mI (338593) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (338923) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;31mE (339633) dht: HIGH bit timeout[0m
+[0;31mE (339633) DHT_SENSOR: Failed to read DHT sensor.[0m
+[0;32mI (340543) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (340543) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (340653) DHT_SENSOR: Humidity: 75.6%, Temp: 29.8C[0m
+[0;32mI (340693) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (340703) LED_TASK: Received: ��?��?[0m
+[0;31mE (340703) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (341543) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (342293) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.5999984741211,"temperature":29.799999237060547}[0m
+[0;32mI (342293) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (343103) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (343103) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (343353) DHT_SENSOR: Humidity: 75.6%, Temp: 29.8C[0m
+[0;32mI (344133) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (344303) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (344303) LED_TASK: Received: ��?���?���
+[0;31mE (344303) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (345063) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.5999984741211,"temperature":29.799999237060547}[0m
+[0;32mI (345063) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (345863) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (345863) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (346123) DHT_SENSOR: Humidity: 75.6%, Temp: 29.8C[0m
+[0;32mI (346873) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;31mE (347293) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (347293) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (347293) esp-tls: Failed to open new connection[0m
+[0;31mE (347303) transport_base: Failed to open a new connection[0m
+[0;31mE (347313) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (347313) HTTP_CLIENT: Failed to upload BH1750 data.[0m
+[0;32mI (347913) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (347913) LED_TASK: Received: ��?���?$��
+[0;31mE (347913) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (347913) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.5999984741211,"temperature":29.799999237060547}[0m
+[0;32mI (347933) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (348313) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (348973) DHT_SENSOR: Humidity: 75.6%, Temp: 29.8C[0m
+[0;32mI (350023) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (350023) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (350673) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.5999984741211,"temperature":29.799999237060547}[0m
+[0;32mI (350683) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (351033) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (351533) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (351533) LED_TASK: Received: �?��?���[0m
+[0;31mE (351533) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (351723) DHT_SENSOR: Humidity: 75.6%, Temp: 29.8C[0m
+[0;32mI (352833) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (352833) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (353553) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.5999984741211,"temperature":29.799999237060547}[0m
+[0;32mI (353553) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (353853) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (354593) DHT_SENSOR: Humidity: 75.6%, Temp: 29.8C[0m
+[0;31mE (355113) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (355113) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (355123) esp-tls: Failed to open new connection[0m
+[0;32mI (355123) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;31mE (355123) transport_base: Failed to open a new connection[0m
+[0;32mI (355133) LED_TASK: Received: ���?���?�&�
+[0;31mE (355143) LED_TASK: Failed to parse JSON.[0m
+[0;31mE (355143) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (355153) HTTP_CLIENT: Failed to upload DHT data.[0m
+[0;32mI (355503) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (355513) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (356173) DHT_SENSOR: Humidity: 75.7%, Temp: 29.8C[0m
+[0;32mI (356513) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (358023) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.6999969482422,"temperature":29.799999237060547}[0m
+[0;32mI (358023) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;31mE (358273) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (358273) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (358273) esp-tls: Failed to open new connection[0m
+[0;31mE (358283) transport_base: Failed to open a new connection[0m
+[0;31mE (358293) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (358293) LED_TASK: HTTP GET request failed.[0m
+[0;32mI (358293) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (358303) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (359053) DHT_SENSOR: Humidity: 75.7%, Temp: 29.8C[0m
+[0;32mI (359313) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;31mE (360753) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (360753) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (360753) esp-tls: Failed to open new connection[0m
+[0;31mE (360753) transport_base: Failed to open a new connection[0m
+[0;31mE (360763) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (360773) LED_TASK: HTTP GET request failed.[0m
+[0;32mI (360813) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.6999969482422,"temperature":29.799999237060547}[0m
+[0;32mI (360813) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (361133) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (361133) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (361853) DHT_SENSOR: Humidity: 75.7%, Temp: 29.8C[0m
+[0;32mI (362133) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (364003) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (364003) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (364073) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.6999969482422,"temperature":29.799999237060547}[0m
+[0;32mI (364083) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;31mE (364773) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (364773) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (364773) esp-tls: Failed to open new connection[0m
+[0;31mE (364783) transport_base: Failed to open a new connection[0m
+[0;31mE (364793) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (364793) LED_TASK: HTTP GET request failed.[0m
+[0;32mI (365013) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (365123) DHT_SENSOR: Humidity: 75.8%, Temp: 29.8C[0m
+[0;32mI (366753) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (366753) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (367083) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.8000030517578,"temperature":29.799999237060547}[0m
+[0;32mI (367083) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (367773) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (368113) DHT_SENSOR: Humidity: 75.8%, Temp: 29.8C[0m
+[0;32mI (368293) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (368293) LED_TASK: Received: ��?���?4��
+[0;31mE (368293) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (369723) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (369733) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (370033) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.8000030517578,"temperature":29.799999237060547}[0m
+[0;32mI (370033) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (370743) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (371063) DHT_SENSOR: Humidity: 75.8%, Temp: 29.8C[0m
+[0;31mE (371543) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (371543) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (371543) esp-tls: Failed to open new connection[0m
+[0;31mE (371543) transport_base: Failed to open a new connection[0m
+[0;31mE (371593) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (371593) HTTP_CLIENT: Failed to upload DHT data.[0m
+[0;32mI (372083) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (372093) LED_TASK: Received: ��?���?[0m
+[0;31mE (372093) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (372403) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (372403) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (372613) DHT_SENSOR: Humidity: 75.8%, Temp: 29.8C[0m
+[0;32mI (373423) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (374153) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.8000030517578,"temperature":29.799999237060547}[0m
+[0;32mI (374153) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (375053) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (375053) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (375223) DHT_SENSOR: Humidity: 75.8%, Temp: 29.8C[0m
+[0;32mI (375563) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (375563) LED_TASK: Received: ���?���?���
+[0;31mE (375563) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (376063) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (376703) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.8000030517578,"temperature":29.799999237060547}[0m
+[0;32mI (376703) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (377603) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (377603) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (377763) DHT_SENSOR: Humidity: 75.9%, Temp: 29.8C[0m
+[0;32mI (378623) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (379153) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (379153) LED_TASK: Received: H0�?��?4��[0m
+[0;31mE (379153) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (379573) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.9000015258789,"temperature":29.799999237060547}[0m
+[0;32mI (379573) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (380473) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (380473) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (380633) DHT_SENSOR: Humidity: 75.8%, Temp: 29.8C[0m
+[0;32mI (381493) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;31mE (382083) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x6180[0m
+[0;32mI (382083) esp-tls-mbedtls: Certificate verified.[0m
+[0;31mE (382083) esp-tls: Failed to open new connection[0m
+[0;31mE (382093) transport_base: Failed to open a new connection[0m
+[0;31mE (382103) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (382103) LED_TASK: HTTP GET request failed.[0m
+[0;32mI (382423) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.8000030517578,"temperature":29.799999237060547}[0m
+[0;32mI (382423) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;31mE (382773) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (382773) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (382773) esp-tls: Failed to open new connection[0m
+[0;31mE (382783) transport_base: Failed to open a new connection[0m
+[0;31mE (382793) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (382793) HTTP_CLIENT: Failed to upload BH1750 data.[0m
+[0;32mI (383453) DHT_SENSOR: Humidity: 75.8%, Temp: 29.8C[0m
+[0;32mI (383793) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;31mE (384623) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (384623) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (384633) esp-tls: Failed to open new connection[0m
+[0;31mE (384633) transport_base: Failed to open a new connection[0m
+[0;31mE (384643) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (384653) LED_TASK: HTTP GET request failed.[0m
+[0;32mI (385303) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.8000030517578,"temperature":29.799999237060547}[0m
+[0;32mI (385303) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (385593) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (385593) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (386333) DHT_SENSOR: Humidity: 75.8%, Temp: 29.8C[0m
+[0;32mI (386603) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;31mE (387083) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (387083) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (387083) esp-tls: Failed to open new connection[0m
+[0;31mE (387093) transport_base: Failed to open a new connection[0m
+[0;31mE (387103) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (387103) LED_TASK: HTTP GET request failed.[0m
+[0;31mE (387773) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (387773) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (387773) esp-tls: Failed to open new connection[0m
+[0;31mE (387783) transport_base: Failed to open a new connection[0m
+[0;31mE (387793) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (387793) HTTP_CLIENT: Failed to upload BH1750 data.[0m
+[0;32mI (388053) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.8000030517578,"temperature":29.799999237060547}[0m
+[0;32mI (388053) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (388793) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (389083) DHT_SENSOR: Humidity: 75.9%, Temp: 29.8C[0m
+[0;31mE (394773) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (394773) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (394773) esp-tls: Failed to open new connection[0m
+[0;31mE (394773) transport_base: Failed to open a new connection[0m
+[0;33mW (394783) esp-tls: Failed to open new connection in specified timeout[0m
+[0;31mE (394793) transport_base: Failed to open a new connection[0m
+[0;31mE (394793) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (394803) HTTP_CLIENT: Failed to upload DHT data.[0m
+[0;31mE (394813) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (394813) HTTP_CLIENT: Failed to upload BH1750 data.[0m
+[0;31mE (395273) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (395273) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (395273) esp-tls: Failed to open new connection[0m
+[0;31mE (395273) transport_base: Failed to open a new connection[0m
+[0;31mE (395283) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (395293) LED_TASK: HTTP GET request failed.[0m
+[0;32mI (395823) DHT_SENSOR: Humidity: 75.9%, Temp: 29.8C[0m
+[0;32mI (395833) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;31mE (397693) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (397693) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (397703) esp-tls: Failed to open new connection[0m
+[0;31mE (397703) transport_base: Failed to open a new connection[0m
+[0;31mE (397713) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (397713) LED_TASK: HTTP GET request failed.[0m
+[0;32mI (397743) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (397743) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (398093) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.9000015258789,"temperature":29.799999237060547}[0m
+[0;32mI (398093) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (398753) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (399123) DHT_SENSOR: Humidity: 75.8%, Temp: 29.8C[0m
+[0;31mE (400183) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (400183) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (400183) esp-tls: Failed to open new connection[0m
+[0;31mE (400183) transport_base: Failed to open a new connection[0m
+[0;31mE (400203) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (400203) LED_TASK: HTTP GET request failed.[0m
+[0;32mI (400853) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.8000030517578,"temperature":29.799999237060547}[0m
+[0;32mI (400853) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (401163) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (401163) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (401883) DHT_SENSOR: Humidity: 75.8%, Temp: 29.7C[0m
+[0;32mI (402173) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;31mE (402723) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (402723) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (402723) esp-tls: Failed to open new connection[0m
+[0;31mE (402733) transport_base: Failed to open a new connection[0m
+[0;31mE (402743) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (402743) HTTP_CLIENT: Failed to upload BH1750 data.[0m
+[0;32mI (403623) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.8000030517578,"temperature":29.700000762939453}[0m
+[0;32mI (403623) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (403753) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (403883) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (403883) LED_TASK: Received: ���?���?���
+[0;31mE (403883) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (404663) DHT_SENSOR: Humidity: 75.9%, Temp: 29.8C[0m
+[0;32mI (405583) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (405583) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (406283) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.9000015258789,"temperature":29.799999237060547}[0m
+[0;32mI (406283) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (406613) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (407333) DHT_SENSOR: Humidity: 75.9%, Temp: 29.7C[0m
+[0;32mI (407383) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (407383) LED_TASK: Received: ��?���?t	�
+[0;31mE (407383) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (408413) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (408413) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (409063) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.9000015258789,"temperature":29.700000762939453}[0m
+[0;32mI (409063) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (409423) BH1750_SENSOR: Light Intensity: 1 lux[0m
+[0;32mI (410093) DHT_SENSOR: Humidity: 75.8%, Temp: 29.8C[0m
+[0;31mE (410633) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (410633) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (410633) esp-tls: Failed to open new connection[0m
+[0;31mE (410633) transport_base: Failed to open a new connection[0m
+[0;31mE (410653) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (410653) HTTP_CLIENT: Failed to upload DHT data.[0m
+[0;32mI (411533) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (411533) LED_TASK: Received: ��?���?��
+[0;31mE (411533) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (411563) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":1}[0m
+[0;32mI (411563) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (411673) DHT_SENSOR: Humidity: 75.9%, Temp: 29.8C[0m
+[0;32mI (412583) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (413573) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.9000015258789,"temperature":29.799999237060547}[0m
+[0;32mI (413573) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (414373) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (414373) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (414633) DHT_SENSOR: Humidity: 75.9%, Temp: 29.8C[0m
+[0;32mI (415093) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (415093) LED_TASK: Received: ���?���?���
+[0;31mE (415093) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (415393) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (416333) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.9000015258789,"temperature":29.799999237060547}[0m
+[0;32mI (416333) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (417113) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (417113) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (417393) DHT_SENSOR: Humidity: 75.9%, Temp: 29.7C[0m
+[0;32mI (418143) BH1750_SENSOR: Light Intensity: 1 lux[0m
+[0;32mI (418673) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (418683) LED_TASK: Received: ��?��?�[0m
+[0;31mE (418683) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (419193) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.9000015258789,"temperature":29.700000762939453}[0m
+[0;32mI (419193) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (419903) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":1}[0m
+[0;32mI (419903) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (420223) DHT_SENSOR: Humidity: 75.9%, Temp: 29.7C[0m
+[0;32mI (420933) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;31mE (421473) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (421473) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (421483) esp-tls: Failed to open new connection[0m
+[0;31mE (421483) transport_base: Failed to open a new connection[0m
+[0;31mE (421493) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (421493) HTTP_CLIENT: Failed to upload BH1750 data.[0m
+[0;32mI (421953) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.9000015258789,"temperature":29.700000762939453}[0m
+[0;32mI (421953) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (422253) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (422253) LED_TASK: Received: ���?���?���
+[0;31mE (422253) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (422503) BH1750_SENSOR: Light Intensity: 1 lux[0m
+[0;32mI (422983) DHT_SENSOR: Humidity: 75.9%, Temp: 29.8C[0m
+[0;32mI (424353) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":1}[0m
+[0;32mI (424353) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (424713) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.9000015258789,"temperature":29.799999237060547}[0m
+[0;32mI (424723) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (425363) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (425753) DHT_SENSOR: Humidity: 75.9%, Temp: 29.8C[0m
+[0;32mI (425783) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (425783) LED_TASK: Received: ��?���?pV�
+[0;31mE (425783) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (427073) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (427073) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (427583) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.9000015258789,"temperature":29.799999237060547}[0m
+[0;32mI (427583) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (428073) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;31mE (428613) dht: HIGH bit timeout[0m
+[0;31mE (428613) DHT_SENSOR: Failed to read DHT sensor.[0m
+[0;32mI (429423) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (429433) LED_TASK: Received: �]�?���?d��
+[0;31mE (429433) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (429633) DHT_SENSOR: Humidity: 75.9%, Temp: 29.7C[0m
+[0;32mI (429743) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (429743) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (430763) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (431163) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.9000015258789,"temperature":29.700000762939453}[0m
+[0;32mI (431173) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;31mE (432203) dht: HIGH bit timeout[0m
+[0;31mE (432203) DHT_SENSOR: Failed to read DHT sensor.[0m
+[0;32mI (432383) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (432393) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (433013) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (433013) LED_TASK: Received: ���?���?���
+[0;31mE (433013) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (433223) DHT_SENSOR: Humidity: 75.9%, Temp: 29.8C[0m
+[0;32mI (433393) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (434953) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.9000015258789,"temperature":29.799999237060547}[0m
+[0;32mI (434953) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (435263) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (435273) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (435983) DHT_SENSOR: Humidity: 75.9%, Temp: 29.8C[0m
+[0;32mI (436273) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (436413) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (436413) LED_TASK: Received: ��?���?���
+[0;31mE (436413) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (437723) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.9000015258789,"temperature":29.799999237060547}[0m
+[0;32mI (437723) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (438043) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (438043) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (438763) DHT_SENSOR: Humidity: 75.9%, Temp: 29.8C[0m
+[0;32mI (439053) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;31mE (439513) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (439513) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (439513) esp-tls: Failed to open new connection[0m
+[0;31mE (439513) transport_base: Failed to open a new connection[0m
+[0;31mE (439543) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (439543) HTTP_CLIENT: Failed to upload BH1750 data.[0m
+[0;32mI (440073) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (440083) LED_TASK: Received: ��?���?��
+[0;31mE (440083) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (440383) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.9000015258789,"temperature":29.799999237060547}[0m
+[0;32mI (440383) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (440543) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (441423) DHT_SENSOR: Humidity: 75.9%, Temp: 29.8C[0m
+[0;32mI (442243) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (442243) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (443253) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.9000015258789,"temperature":29.799999237060547}[0m
+[0;32mI (443253) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (443273) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (443553) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (443553) LED_TASK: Received: h��?��?\)�[0m
+[0;31mE (443553) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (444283) DHT_SENSOR: Humidity: 75.9%, Temp: 29.7C[0m
+[0;32mI (444763) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (444763) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (445793) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (445813) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.9000015258789,"temperature":29.700000762939453}[0m
+[0;32mI (445813) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (446853) DHT_SENSOR: Humidity: 75.9%, Temp: 29.8C[0m
+[0;32mI (447143) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (447143) LED_TASK: Received: �?�?���?�`�
+[0;31mE (447143) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (447483) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (447483) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (448473) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.9000015258789,"temperature":29.799999237060547}[0m
+[0;32mI (448473) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (448513) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (449503) DHT_SENSOR: Humidity: 75.9%, Temp: 29.8C[0m
+[0;32mI (450213) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (450213) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;31mE (450273) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2880[0m
+[0;32mI (450273) esp-tls-mbedtls: Certificate verified.[0m
+[0;31mE (450273) esp-tls: Failed to open new connection[0m
+[0;31mE (450273) transport_base: Failed to open a new connection[0m
+[0;31mE (450293) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (450293) HTTP_CLIENT: Failed to upload DHT data.[0m
+[0;32mI (450933) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (450933) LED_TASK: Received: ���?���?���
+[0;31mE (450933) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (451223) BH1750_SENSOR: Light Intensity: 1 lux[0m
+[0;32mI (451323) DHT_SENSOR: Humidity: 75.9%, Temp: 29.7C[0m
+[0;32mI (452973) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":1}[0m
+[0;32mI (452973) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (453283) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.9000015258789,"temperature":29.700000762939453}[0m
+[0;32mI (453283) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (453973) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (454313) DHT_SENSOR: Humidity: 75.9%, Temp: 29.8C[0m
+[0;32mI (454383) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (454383) LED_TASK: Received: ��?���?���
+[0;31mE (454383) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (455643) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (455643) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (456153) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.9000015258789,"temperature":29.799999237060547}[0m
+[0;32mI (456153) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (456643) BH1750_SENSOR: Light Intensity: 1 lux[0m
+[0;32mI (457183) DHT_SENSOR: Humidity: 75.9%, Temp: 29.7C[0m
+[0;31mE (457713) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2880[0m
+[0;32mI (457713) esp-tls-mbedtls: Certificate verified.[0m
+[0;31mE (457713) esp-tls: Failed to open new connection[0m
+[0;31mE (457713) transport_base: Failed to open a new connection[0m
+[0;31mE (457723) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (457733) HTTP_CLIENT: Failed to upload DHT data.[0m
+[0;32mI (457993) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (458003) LED_TASK: Received: ��?���?Р�
+[0;31mE (458003) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (458313) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":1}[0m
+[0;32mI (458313) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (458753) DHT_SENSOR: Humidity: 75.9%, Temp: 29.8C[0m
+[0;32mI (459343) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;31mE (460403) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (460403) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (460413) esp-tls: Failed to open new connection[0m
+[0;31mE (460413) transport_base: Failed to open a new connection[0m
+[0;31mE (460423) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (460423) LED_TASK: HTTP GET request failed.[0m
+[0;32mI (460453) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.9000015258789,"temperature":29.799999237060547}[0m
+[0;32mI (460453) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (461063) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (461063) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (461483) DHT_SENSOR: Humidity: 75.9%, Temp: 29.8C[0m
+[0;32mI (462093) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;31mE (462833) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (462833) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (462833) esp-tls: Failed to open new connection[0m
+[0;31mE (462833) transport_base: Failed to open a new connection[0m
+[0;31mE (462853) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (462853) LED_TASK: HTTP GET request failed.[0m
+[0;32mI (463133) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.9000015258789,"temperature":29.799999237060547}[0m
+[0;32mI (463143) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (464133) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (464143) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (464173) DHT_SENSOR: Humidity: 75.9%, Temp: 29.8C[0m
+[0;32mI (465143) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;31mE (465563) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (465563) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (465563) esp-tls: Failed to open new connection[0m
+[0;31mE (465573) transport_base: Failed to open a new connection[0m
+[0;31mE (465583) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (465583) HTTP_CLIENT: Failed to upload BH1750 data.[0m
+[0;32mI (465783) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.9000015258789,"temperature":29.799999237060547}[0m
+[0;32mI (465783) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (466393) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (466393) LED_TASK: Received: �a�?���?<T�
+[0;31mE (466393) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (466583) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (466813) DHT_SENSOR: Humidity: 75.9%, Temp: 29.8C[0m
+[0;32mI (468423) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (468423) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (468743) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.9000015258789,"temperature":29.799999237060547}[0m
+[0;32mI (468753) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (469433) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (469783) DHT_SENSOR: Humidity: 75.9%, Temp: 29.8C[0m
+[0;32mI (469873) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (469883) LED_TASK: Received: ��?���?[0m
+[0;31mE (469883) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (471203) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (471203) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (471523) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.9000015258789,"temperature":29.799999237060547}[0m
+[0;32mI (471523) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (472213) BH1750_SENSOR: Light Intensity: 1 lux[0m
+[0;32mI (472553) DHT_SENSOR: Humidity: 75.9%, Temp: 29.8C[0m
+[0;31mE (478283) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (478283) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (478283) esp-tls: Failed to open new connection[0m
+[0;31mE (478283) transport_base: Failed to open a new connection[0m
+[0;33mW (478293) esp-tls: Failed to open new connection in specified timeout[0m
+[0;31mE (478303) transport_base: Failed to open a new connection[0m
+[0;31mE (478303) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (478313) HTTP_CLIENT: Failed to upload DHT data.[0m
+[0;31mE (478323) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (478323) HTTP_CLIENT: Failed to upload BH1750 data.[0m
+[0;31mE (478783) transport_base: esp_tls_conn_write error, errno=No more processes[0m
+[0;31mE (478783) HTTP_CLIENT: Error write request[0m
+[0;31mE (478783) LED_TASK: HTTP GET request failed.[0m
+[0;32mI (479333) DHT_SENSOR: Humidity: 75.9%, Temp: 29.8C[0m
+[0;32mI (479343) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (481653) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (481653) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;31mE (481783) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (481783) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (481783) esp-tls: Failed to open new connection[0m
+[0;31mE (481793) transport_base: Failed to open a new connection[0m
+[0;31mE (481803) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (481803) LED_TASK: HTTP GET request failed.[0m
+[0;32mI (482163) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":75.9000015258789,"temperature":29.799999237060547}[0m
+[0;32mI (482163) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (482663) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (483203) DHT_SENSOR: Humidity: 76.0%, Temp: 29.7C[0m
+[0;32mI (484343) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (484343) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;31mE (484783) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (484783) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (484783) esp-tls: Failed to open new connection[0m
+[0;31mE (484793) transport_base: Failed to open a new connection[0m
+[0;31mE (484803) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (484803) LED_TASK: HTTP GET request failed.[0m
+[0;32mI (485033) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76,"temperature":29.700000762939453}[0m
+[0;32mI (485033) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (485353) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (486073) DHT_SENSOR: Humidity: 76.0%, Temp: 29.8C[0m
+[0;32mI (487003) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (487003) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (487793) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76,"temperature":29.799999237060547}[0m
+[0;32mI (487793) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (488033) BH1750_SENSOR: Light Intensity: 1 lux[0m
+[0;32mI (488413) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (488413) LED_TASK: Received: 4��?��?0��[0m
+[0;31mE (488413) LED_TASK: 'state' not found or invalid in the JSON.[0m
+[0;32mI (488833) DHT_SENSOR: Humidity: 76.0%, Temp: 29.7C[0m
+[0;32mI (489873) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":1}[0m
+[0;32mI (489873) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (490813) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76,"temperature":29.700000762939453}[0m
+[0;32mI (490813) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (490903) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (491853) DHT_SENSOR: Humidity: 76.1%, Temp: 29.8C[0m
+[0;32mI (491943) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (491943) LED_TASK: Received: {�?��?d�
+[0;31mE (491943) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (492613) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (492613) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (493643) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (493943) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.0999984741211,"temperature":29.799999237060547}[0m
+[0;32mI (493943) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (494973) DHT_SENSOR: Humidity: 76.1%, Temp: 29.8C[0m
+[0;32mI (495373) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (495383) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (495693) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (495693) LED_TASK: Received: x��?��?�z�[0m
+[0;31mE (495693) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (496393) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (496733) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.0999984741211,"temperature":29.799999237060547}[0m
+[0;32mI (496733) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (497763) DHT_SENSOR: Humidity: 76.1%, Temp: 29.8C[0m
+[0;32mI (498253) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (498253) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (499253) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;31mE (499383) esp-tls-mbedtls: mbedtls_ssl_setup returned -0x7F00[0m
+[0;31mE (499383) esp-tls: create_ssl_handle failed[0m
+[0;31mE (499383) esp-tls: Failed to open new connection[0m
+[0;31mE (499393) transport_base: Failed to open a new connection[0m
+[0;31mE (499393) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (499403) HTTP_CLIENT: Failed to upload BH1750 data.[0m
+[0;32mI (499583) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (499583) LED_TASK: Received: ��?��?ls�[0m
+[0;31mE (499583) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (499643) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.0999984741211,"temperature":29.799999237060547}[0m
+[0;32mI (499643) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (500403) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (500673) DHT_SENSOR: Humidity: 76.1%, Temp: 29.7C[0m
+[0;32mI (502543) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (502543) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (502553) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.0999984741211,"temperature":29.700000762939453}[0m
+[0;32mI (502553) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;31mE (502783) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (502783) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (502783) esp-tls: Failed to open new connection[0m
+[0;31mE (502793) transport_base: Failed to open a new connection[0m
+[0;31mE (502803) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (502803) LED_TASK: HTTP GET request failed.[0m
+[0;32mI (503543) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (503583) DHT_SENSOR: Humidity: 76.1%, Temp: 29.8C[0m
+[0;31mE (505193) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (505193) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (505193) esp-tls: Failed to open new connection[0m
+[0;31mE (505203) transport_base: Failed to open a new connection[0m
+[0;31mE (505213) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (505213) LED_TASK: HTTP GET request failed.[0m
+[0;32mI (505383) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (505383) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (505613) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.0999984741211,"temperature":29.799999237060547}[0m
+[0;32mI (505613) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (506393) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (506643) DHT_SENSOR: Humidity: 76.0%, Temp: 29.8C[0m
+[0;31mE (507603) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x3B00[0m
+[0;32mI (507603) esp-tls-mbedtls: Certificate verified.[0m
+[0;31mE (507603) esp-tls: Failed to open new connection[0m
+[0;31mE (507613) transport_base: Failed to open a new connection[0m
+[0;31mE (507623) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (507623) LED_TASK: HTTP GET request failed.[0m
+[0;32mI (508173) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (508173) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (508493) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76,"temperature":29.799999237060547}[0m
+[0;32mI (508503) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (509193) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (509533) DHT_SENSOR: Humidity: 76.0%, Temp: 29.8C[0m
+[0;31mE (510073) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (510073) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (510073) esp-tls: Failed to open new connection[0m
+[0;31mE (510073) transport_base: Failed to open a new connection[0m
+[0;31mE (510093) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (510093) LED_TASK: HTTP GET request failed.[0m
+[0;31mE (510283) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2880[0m
+[0;32mI (510283) esp-tls-mbedtls: Certificate verified.[0m
+[0;31mE (510283) esp-tls: Failed to open new connection[0m
+[0;31mE (510283) transport_base: Failed to open a new connection[0m
+[0;31mE (510303) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (510303) HTTP_CLIENT: Failed to upload DHT data.[0m
+[0;32mI (510933) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (510933) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (511323) DHT_SENSOR: Humidity: 76.0%, Temp: 29.8C[0m
+[0;32mI (511963) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;31mE (517783) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2880[0m
+[0;31mE (517783) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (517783) esp-tls-mbedtls: Certificate verified.[0m
+[0;32mI (517783) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (517783) esp-tls: Failed to open new connection[0m
+[0;31mE (517793) esp-tls: Failed to open new connection[0m
+[0;31mE (517803) transport_base: Failed to open a new connection[0m
+[0;31mE (517803) transport_base: Failed to open a new connection[0m
+[0;31mE (517813) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (517823) HTTP_CLIENT: Failed to upload BH1750 data.[0m
+[0;31mE (517823) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (517833) LED_TASK: HTTP GET request failed.[0m
+[0;31mE (518283) transport_base: esp_tls_conn_write error, errno=No more processes[0m
+[0;31mE (518283) HTTP_CLIENT: Error write request[0m
+[0;31mE (518283) HTTP_CLIENT: Failed to upload DHT data.[0m
+[0;32mI (518833) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (519313) DHT_SENSOR: Humidity: 76.0%, Temp: 29.8C[0m
+[0;31mE (520353) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x6180[0m
+[0;32mI (520353) esp-tls-mbedtls: Certificate verified.[0m
+[0;31mE (520363) esp-tls: Failed to open new connection[0m
+[0;31mE (520363) transport_base: Failed to open a new connection[0m
+[0;31mE (520373) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (520373) HTTP_CLIENT: Failed to upload DHT data.[0m
+[0;32mI (520563) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (520563) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;31mE (520783) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (520783) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (520783) esp-tls: Failed to open new connection[0m
+[0;31mE (520793) transport_base: Failed to open a new connection[0m
+[0;31mE (520803) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (520803) LED_TASK: HTTP GET request failed.[0m
+[0;32mI (521403) DHT_SENSOR: Humidity: 76.2%, Temp: 29.7C[0m
+[0;32mI (521573) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (523123) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.1999969482422,"temperature":29.700000762939453}[0m
+[0;32mI (523123) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (523443) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (523443) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (524163) DHT_SENSOR: Humidity: 76.2%, Temp: 29.8C[0m
+[0;32mI (524303) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (524303) LED_TASK: Received: ���?���?X��
+[0;31mE (524303) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (524453) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (525883) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.1999969482422,"temperature":29.799999237060547}[0m
+[0;32mI (525893) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (526203) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (526203) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (526923) DHT_SENSOR: Humidity: 76.3%, Temp: 29.8C[0m
+[0;32mI (527213) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (527933) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (527933) LED_TASK: Received: ��?���?[0m
+[0;31mE (527933) LED_TASK: Failed to parse JSON.[0m
+[0;31mE (528283) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (528283) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (528283) esp-tls: Failed to open new connection[0m
+[0;31mE (528293) transport_base: Failed to open a new connection[0m
+[0;31mE (528303) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (528303) HTTP_CLIENT: Failed to upload BH1750 data.[0m
+[0;32mI (529303) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (529473) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.3000030517578,"temperature":29.799999237060547}[0m
+[0;32mI (529473) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (530503) DHT_SENSOR: Humidity: 76.3%, Temp: 29.8C[0m
+[0;32mI (530913) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (530913) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (531743) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (531743) LED_TASK: Received: ���?���?H��
+[0;31mE (531743) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (531933) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (532093) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.3000030517578,"temperature":29.799999237060547}[0m
+[0;32mI (532093) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (533123) DHT_SENSOR: Humidity: 76.4%, Temp: 29.8C[0m
+[0;32mI (533673) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (533673) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (534703) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (534823) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.4000015258789,"temperature":29.799999237060547}[0m
+[0;32mI (534823) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (535313) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (535313) LED_TASK: Received: ���?���?[0m
+[0;31mE (535313) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (535853) DHT_SENSOR: Humidity: 76.4%, Temp: 29.8C[0m
+[0;32mI (536243) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (536243) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (537253) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (537503) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.4000015258789,"temperature":29.799999237060547}[0m
+[0;32mI (537503) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (538533) DHT_SENSOR: Humidity: 76.4%, Temp: 29.8C[0m
+[0;31mE (538763) esp-tls-mbedtls: mbedtls_ssl_setup returned -0x7F00[0m
+[0;31mE (538763) esp-tls: create_ssl_handle failed[0m
+[0;31mE (538763) esp-tls: Failed to open new connection[0m
+[0;31mE (538763) transport_base: Failed to open a new connection[0m
+[0;31mE (538783) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (538783) HTTP_CLIENT: Failed to upload DHT data.[0m
+[0;32mI (539003) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (539003) LED_TASK: Received: ���?���?[0m
+[0;31mE (539003) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (539133) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (539133) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (539803) DHT_SENSOR: Humidity: 76.4%, Temp: 29.8C[0m
+[0;32mI (540143) BH1750_SENSOR: Light Intensity: 1 lux[0m
+[0;32mI (544013) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":1}[0m
+[0;32mI (544013) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (544623) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.4000015258789,"temperature":29.799999237060547}[0m
+[0;32mI (544623) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;31mE (544783) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (544783) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (544783) esp-tls: Failed to open new connection[0m
+[0;31mE (544793) transport_base: Failed to open a new connection[0m
+[0;31mE (544803) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (544803) LED_TASK: HTTP GET request failed.[0m
+[0;32mI (545023) BH1750_SENSOR: Light Intensity: 1 lux[0m
+[0;32mI (545663) DHT_SENSOR: Humidity: 76.4%, Temp: 29.8C[0m
+[0;32mI (546723) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":1}[0m
+[0;32mI (546733) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (547233) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.4000015258789,"temperature":29.799999237060547}[0m
+[0;32mI (547233) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (547733) BH1750_SENSOR: Light Intensity: 1 lux[0m
+[0;32mI (548273) DHT_SENSOR: Humidity: 76.4%, Temp: 29.8C[0m
+[0;32mI (548313) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (548313) LED_TASK: Received: ��?���?$C�
+[0;31mE (548313) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (549393) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":1}[0m
+[0;32mI (549393) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (550153) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.4000015258789,"temperature":29.799999237060547}[0m
+[0;32mI (550153) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (550403) BH1750_SENSOR: Light Intensity: 1 lux[0m
+[0;32mI (551183) DHT_SENSOR: Humidity: 76.5%, Temp: 29.7C[0m
+[0;31mE (551583) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2880[0m
+[0;32mI (551583) esp-tls-mbedtls: Certificate verified.[0m
+[0;31mE (551583) esp-tls: Failed to open new connection[0m
+[0;31mE (551593) transport_base: Failed to open a new connection[0m
+[0;31mE (551603) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (551603) HTTP_CLIENT: Failed to upload DHT data.[0m
+[0;32mI (552103) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (552113) LED_TASK: Received: ��?���?�-�
+[0;31mE (552113) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (552113) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":1}[0m
+[0;32mI (552123) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (552623) DHT_SENSOR: Humidity: 76.5%, Temp: 29.8C[0m
+[0;32mI (553153) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (554453) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.5,"temperature":29.799999237060547}[0m
+[0;32mI (554453) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (554873) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (554873) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (555483) DHT_SENSOR: Humidity: 76.5%, Temp: 29.8C[0m
+[0;32mI (555873) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (555933) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (555933) LED_TASK: Received: ���?���?p��
+[0;31mE (555933) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (557843) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.5,"temperature":29.799999237060547}[0m
+[0;32mI (557843) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (557853) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (557853) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (558883) DHT_SENSOR: Humidity: 76.5%, Temp: 29.7C[0m
+[0;32mI (558893) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (559933) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (559933) LED_TASK: Received: $C�?��?��[0m
+[0;31mE (559933) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (560803) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.5,"temperature":29.700000762939453}[0m
+[0;32mI (560803) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (561833) DHT_SENSOR: Humidity: 76.5%, Temp: 29.8C[0m
+[0;32mI (561923) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (561933) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (562933) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;31mE (568783) transport_base: esp_tls_conn_write error, errno=No more processes[0m
+[0;31mE (568783) transport_base: esp_tls_conn_write error, errno=No more processes[0m
+[0;31mE (568783) HTTP_CLIENT: Error write request[0m
+[0;31mE (568783) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;31mE (568783) HTTP_CLIENT: Error write request[0m
+[0;31mE (568803) HTTP_CLIENT: Failed to upload DHT data.[0m
+[0;32mI (568793) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (568813) LED_TASK: HTTP GET request failed.[0m
+[0;31mE (568813) esp-tls: Failed to open new connection[0m
+[0;31mE (568823) transport_base: Failed to open a new connection[0m
+[0;31mE (568833) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (568833) HTTP_CLIENT: Failed to upload BH1750 data.[0m
+[0;32mI (569823) DHT_SENSOR: Humidity: 76.5%, Temp: 29.8C[0m
+[0;32mI (569843) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;31mE (571303) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x6180[0m
+[0;32mI (571303) esp-tls-mbedtls: Certificate verified.[0m
+[0;31mE (571303) esp-tls: Failed to open new connection[0m
+[0;31mE (571313) transport_base: Failed to open a new connection[0m
+[0;31mE (571323) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (571323) HTTP_CLIENT: Failed to upload BH1750 data.[0m
+[0;31mE (571783) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2880[0m
+[0;32mI (571783) esp-tls-mbedtls: Certificate verified.[0m
+[0;31mE (571783) esp-tls: Failed to open new connection[0m
+[0;31mE (571783) transport_base: Failed to open a new connection[0m
+[0;31mE (571803) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (571803) LED_TASK: HTTP GET request failed.[0m
+[0;32mI (572073) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.5,"temperature":29.799999237060547}[0m
+[0;32mI (572073) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (572333) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (573113) DHT_SENSOR: Humidity: 76.6%, Temp: 29.7C[0m
+[0;32mI (574033) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (574033) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (574933) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.5999984741211,"temperature":29.700000762939453}[0m
+[0;32mI (574943) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (575063) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (575223) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (575223) LED_TASK: Received: ���?���?l��
+[0;31mE (575223) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (575973) DHT_SENSOR: Humidity: 76.6%, Temp: 29.7C[0m
+[0;32mI (576733) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (576733) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (577723) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.5999984741211,"temperature":29.700000762939453}[0m
+[0;32mI (577723) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (577763) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (578753) DHT_SENSOR: Humidity: 76.6%, Temp: 29.7C[0m
+[0;32mI (579383) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (579383) LED_TASK: Received: ��?���?l��
+[0;31mE (579383) LED_TASK: Failed to parse JSON.[0m
+[0;31mE (579783) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (579783) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (579783) esp-tls: Failed to open new connection[0m
+[0;31mE (579793) transport_base: Failed to open a new connection[0m
+[0;31mE (579803) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (579803) HTTP_CLIENT: Failed to upload DHT data.[0m
+[0;32mI (580823) DHT_SENSOR: Humidity: 76.6%, Temp: 29.7C[0m
+[0;32mI (581183) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (581183) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (582193) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (582623) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.5999984741211,"temperature":29.700000762939453}[0m
+[0;32mI (582623) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (582973) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (582973) LED_TASK: Received: ���?���?���
+[0;31mE (582973) LED_TASK: Failed to parse JSON.[0m
+[0;31mE (583283) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (583283) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (583283) esp-tls: Failed to open new connection[0m
+[0;31mE (583293) transport_base: Failed to open a new connection[0m
+[0;31mE (583303) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (583303) HTTP_CLIENT: Failed to upload BH1750 data.[0m
+[0;32mI (583663) DHT_SENSOR: Humidity: 76.6%, Temp: 29.7C[0m
+[0;32mI (584303) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (585363) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.5999984741211,"temperature":29.700000762939453}[0m
+[0;32mI (585373) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;31mE (585383) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (585383) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (585383) esp-tls: Failed to open new connection[0m
+[0;31mE (585393) transport_base: Failed to open a new connection[0m
+[0;31mE (585403) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (585403) LED_TASK: HTTP GET request failed.[0m
+[0;32mI (585993) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (585993) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;31mE (586403) dht: HIGH bit timeout[0m
+[0;31mE (586403) DHT_SENSOR: Failed to read DHT sensor.[0m
+[0;32mI (587003) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;31mE (587423) dht: HIGH bit timeout[0m
+[0;31mE (587423) DHT_SENSOR: Failed to read DHT sensor.[0m
+[0;32mI (588443) DHT_SENSOR: Humidity: 76.6%, Temp: 29.8C[0m
+[0;32mI (588763) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (588763) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (589073) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (589073) LED_TASK: Received: ���?���?���
+[0;31mE (589073) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (589773) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (590093) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.5999984741211,"temperature":29.799999237060547}[0m
+[0;32mI (590093) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (591123) DHT_SENSOR: Humidity: 76.6%, Temp: 29.7C[0m
+[0;32mI (591423) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (591423) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (592433) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;31mE (592543) esp-tls-mbedtls: mbedtls_ssl_setup returned -0x7F00[0m
+[0;31mE (592543) esp-tls: create_ssl_handle failed[0m
+[0;31mE (592543) esp-tls: Failed to open new connection[0m
+[0;31mE (592553) transport_base: Failed to open a new connection[0m
+[0;31mE (592563) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (592563) HTTP_CLIENT: Failed to upload BH1750 data.[0m
+[0;32mI (592753) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (592753) LED_TASK: Received: ���?���?[0m
+[0;31mE (592753) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (592783) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.5999984741211,"temperature":29.700000762939453}[0m
+[0;32mI (592783) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (593573) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (593813) DHT_SENSOR: Humidity: 76.6%, Temp: 29.7C[0m
+[0;32mI (595233) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (595233) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (595523) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.5999984741211,"temperature":29.700000762939453}[0m
+[0;32mI (595523) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;31mE (595783) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (595783) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (595783) esp-tls: Failed to open new connection[0m
+[0;31mE (595793) transport_base: Failed to open a new connection[0m
+[0;31mE (595803) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (595803) LED_TASK: HTTP GET request failed.[0m
+[0;32mI (596243) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (596553) DHT_SENSOR: Humidity: 76.6%, Temp: 29.8C[0m
+[0;32mI (597983) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (597983) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (598293) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.5999984741211,"temperature":29.799999237060547}[0m
+[0;32mI (598293) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (598993) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (599323) DHT_SENSOR: Humidity: 76.6%, Temp: 29.7C[0m
+[0;32mI (599383) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (599383) LED_TASK: Received: ��?��?�a�[0m
+[0;31mE (599383) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (600743) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (600743) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (601053) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.5999984741211,"temperature":29.700000762939453}[0m
+[0;32mI (601063) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (601763) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (602093) DHT_SENSOR: Humidity: 76.6%, Temp: 29.7C[0m
+[0;31mE (602263) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (602263) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (602263) esp-tls: Failed to open new connection[0m
+[0;31mE (602273) transport_base: Failed to open a new connection[0m
+[0;31mE (602283) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (602283) HTTP_CLIENT: Failed to upload BH1750 data.[0m
+[0;32mI (602893) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (602893) LED_TASK: Received: ���?���?[0m
+[0;31mE (602893) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (603283) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (603713) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.5999984741211,"temperature":29.700000762939453}[0m
+[0;32mI (603713) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (604743) DHT_SENSOR: Humidity: 76.6%, Temp: 29.7C[0m
+[0;32mI (604843) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (604843) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (605873) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;31mE (606283) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2880[0m
+[0;32mI (606283) esp-tls-mbedtls: Certificate verified.[0m
+[0;31mE (606283) esp-tls: Failed to open new connection[0m
+[0;31mE (606293) transport_base: Failed to open a new connection[0m
+[0;31mE (606303) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (606303) HTTP_CLIENT: Failed to upload BH1750 data.[0m
+[0;32mI (606353) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.5999984741211,"temperature":29.700000762939453}[0m
+[0;32mI (606353) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (606583) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (606583) LED_TASK: Received: ���?���?[0m
+[0;31mE (606583) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (607313) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (607383) DHT_SENSOR: Humidity: 76.6%, Temp: 29.7C[0m
+[0;33mW (613853) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;31mE (613853) HTTP_CLIENT: Failed to upload DHT data.[0m
+[0;31mE (614283) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (614283) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (614283) esp-tls: Failed to open new connection[0m
+[0;31mE (614283) transport_base: Failed to open a new connection[0m
+[0;31mE (614293) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (614303) LED_TASK: HTTP GET request failed.[0m
+[0;31mE (614783) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x6E00[0m
+[0;32mI (614783) esp-tls-mbedtls: Certificate verified.[0m
+[0;31mE (614783) esp-tls: Failed to open new connection[0m
+[0;31mE (614783) transport_base: Failed to open a new connection[0m
+[0;31mE (614793) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (614793) HTTP_CLIENT: Failed to upload BH1750 data.[0m
+[0;32mI (614873) DHT_SENSOR: Humidity: 76.6%, Temp: 29.7C[0m
+[0;32mI (615803) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (616423) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.5999984741211,"temperature":29.700000762939453}[0m
+[0;32mI (616423) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (617433) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (617433) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;31mE (617483) dht: HIGH bit timeout[0m
+[0;31mE (617483) DHT_SENSOR: Failed to read DHT sensor.[0m
+[0;32mI (617743) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (617743) LED_TASK: Received: ���?���?���
+[0;31mE (617743) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (618443) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;31mE (618503) dht: HIGH bit timeout[0m
+[0;31mE (618503) DHT_SENSOR: Failed to read DHT sensor.[0m
+[0;32mI (619523) DHT_SENSOR: Humidity: 76.7%, Temp: 29.7C[0m
+[0;32mI (619973) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (619973) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (621003) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (621133) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.6999969482422,"temperature":29.700000762939453}[0m
+[0;32mI (621133) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (621433) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (621433) LED_TASK: Received: ���?���?���
+[0;31mE (621433) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (622163) DHT_SENSOR: Humidity: 76.6%, Temp: 29.7C[0m
+[0;32mI (622663) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (622663) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (623693) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (623823) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.5999984741211,"temperature":29.700000762939453}[0m
+[0;32mI (623823) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (624853) DHT_SENSOR: Humidity: 76.7%, Temp: 29.7C[0m
+[0;31mE (624963) esp-tls-mbedtls: mbedtls_ssl_setup returned -0x7F00[0m
+[0;31mE (624963) esp-tls: create_ssl_handle failed[0m
+[0;31mE (624963) esp-tls: Failed to open new connection[0m
+[0;31mE (624963) transport_base: Failed to open a new connection[0m
+[0;31mE (624973) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (624983) HTTP_CLIENT: Failed to upload DHT data.[0m
+[0;32mI (625023) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (625023) LED_TASK: Received: ���?���?���
+[0;31mE (625023) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (625363) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (625363) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (626003) DHT_SENSOR: Humidity: 76.6%, Temp: 29.7C[0m
+[0;32mI (626363) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;31mE (632783) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2880[0m
+[0;32mI (632783) esp-tls-mbedtls: Certificate verified.[0m
+[0;31mE (632783) esp-tls: Failed to open new connection[0m
+[0;31mE (632783) transport_base: Failed to open a new connection[0m
+[0;31mE (632793) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (632803) LED_TASK: HTTP GET request failed.[0m
+[0;33mW (633283) esp-tls: Failed to open new connection in specified timeout[0m
+[0;31mE (633283) transport_base: Failed to open a new connection[0m
+[0;31mE (633283) transport_base: esp_tls_conn_write error, errno=No more processes[0m
+[0;31mE (633293) HTTP_CLIENT: Error write request[0m
+[0;31mE (633293) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (633303) HTTP_CLIENT: Failed to upload BH1750 data.[0m
+[0;31mE (633303) HTTP_CLIENT: Failed to upload DHT data.[0m
+[0;32mI (634303) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (634333) DHT_SENSOR: Humidity: 76.7%, Temp: 29.7C[0m
+[0;31mE (634913) esp-tls-mbedtls: mbedtls_ssl_setup returned -0x7F00[0m
+[0;31mE (634913) esp-tls: create_ssl_handle failed[0m
+[0;31mE (634913) esp-tls: Failed to open new connection[0m
+[0;31mE (634923) transport_base: Failed to open a new connection[0m
+[0;31mE (634933) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (634933) LED_TASK: HTTP GET request failed.[0m
+[0;32mI (636383) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.6999969482422,"temperature":29.700000762939453}[0m
+[0;32mI (636383) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (636393) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (636393) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (637423) DHT_SENSOR: Humidity: 76.7%, Temp: 29.7C[0m
+[0;32mI (637433) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;31mE (643283) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2880[0m
+[0;32mI (643283) esp-tls-mbedtls: Certificate verified.[0m
+[0;31mE (643283) esp-tls: Failed to open new connection[0m
+[0;31mE (643283) transport_base: Failed to open a new connection[0m
+[0;31mE (643293) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (643303) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (643303) esp-tls: Failed to open new connection[0m
+[0;31mE (643313) transport_base: Failed to open a new connection[0m
+[0;31mE (643303) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (643323) HTTP_CLIENT: Failed to upload BH1750 data.[0m
+[0;31mE (643333) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (643333) HTTP_CLIENT: Failed to upload DHT data.[0m
+[0;31mE (643783) transport_base: esp_tls_conn_write error, errno=No more processes[0m
+[0;31mE (643783) HTTP_CLIENT: Error write request[0m
+[0;31mE (643783) LED_TASK: HTTP GET request failed.[0m
+[0;32mI (644333) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (644363) DHT_SENSOR: Humidity: 76.7%, Temp: 29.7C[0m
+[0;32mI (646993) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (647003) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (647003) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.6999969482422,"temperature":29.700000762939453}[0m
+[0;32mI (647013) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (648013) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (648043) DHT_SENSOR: Humidity: 76.7%, Temp: 29.7C[0m
+[0;31mE (648193) esp-tls-mbedtls: mbedtls_ssl_setup returned -0x7F00[0m
+[0;31mE (648193) esp-tls: create_ssl_handle failed[0m
+[0;31mE (648193) esp-tls: Failed to open new connection[0m
+[0;31mE (648203) transport_base: Failed to open a new connection[0m
+[0;31mE (648213) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (648213) HTTP_CLIENT: Failed to upload DHT data.[0m
+[0;32mI (648673) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (648673) LED_TASK: Received: 4��?��?���[0m
+[0;31mE (648673) LED_TASK: 'state' not found or invalid in the JSON.[0m
+[0;32mI (649243) DHT_SENSOR: Humidity: 76.7%, Temp: 29.7C[0m
+[0;32mI (649593) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (649593) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (650603) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (650813) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.6999969482422,"temperature":29.700000762939453}[0m
+[0;32mI (650813) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;31mE (650813) esp-tls-mbedtls: mbedtls_ssl_setup returned -0x7F00[0m
+[0;31mE (650823) esp-tls: create_ssl_handle failed[0m
+[0;31mE (650823) esp-tls: Failed to open new connection[0m
+[0;31mE (650833) transport_base: Failed to open a new connection[0m
+[0;31mE (650843) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (650843) LED_TASK: HTTP GET request failed.[0m
+[0;32mI (651843) DHT_SENSOR: Humidity: 76.6%, Temp: 29.7C[0m
+[0;32mI (652253) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (652253) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (653263) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (653393) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.5999984741211,"temperature":29.700000762939453}[0m
+[0;32mI (653393) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (654443) DHT_SENSOR: Humidity: 76.6%, Temp: 29.7C[0m
+[0;32mI (654473) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (654473) LED_TASK: Received: ��?���?���
+[0;31mE (654473) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (654933) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (654933) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (655953) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (656033) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.5999984741211,"temperature":29.700000762939453}[0m
+[0;32mI (656033) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (657093) DHT_SENSOR: Humidity: 76.6%, Temp: 29.7C[0m
+[0;32mI (657473) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (657473) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (658053) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (658053) LED_TASK: Received: ���?���?�&�
+[0;31mE (658053) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (658483) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (658603) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.5999984741211,"temperature":29.700000762939453}[0m
+[0;32mI (658603) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (659633) DHT_SENSOR: Humidity: 76.6%, Temp: 29.7C[0m
+[0;32mI (660033) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (660053) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (661073) BH1750_SENSOR: Light Intensity: 1 lux[0m
+[0;32mI (661163) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.5999984741211,"temperature":29.700000762939453}[0m
+[0;32mI (661163) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (661673) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (661673) LED_TASK: Received: ��?��?�d�[0m
+[0;31mE (661673) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (662223) DHT_SENSOR: Humidity: 76.7%, Temp: 29.7C[0m
+[0;32mI (662593) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":1}[0m
+[0;32mI (662593) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (663603) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (663723) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.6999969482422,"temperature":29.700000762939453}[0m
+[0;32mI (663723) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (664763) DHT_SENSOR: Humidity: 76.7%, Temp: 29.7C[0m
+[0;32mI (665553) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (665553) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (665553) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (665563) LED_TASK: Received: |��?��?���[0m
+[0;31mE (665563) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (666573) BH1750_SENSOR: Light Intensity: 1 lux[0m
+[0;32mI (667523) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.6999969482422,"temperature":29.700000762939453}[0m
+[0;32mI (667523) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (668433) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":1}[0m
+[0;32mI (668433) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (668583) DHT_SENSOR: Humidity: 76.7%, Temp: 29.7C[0m
+[0;32mI (669113) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (669113) LED_TASK: Received: ��?���?T��
+[0;31mE (669113) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (669453) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (670393) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.6999969482422,"temperature":29.700000762939453}[0m
+[0;32mI (670393) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (671133) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (671133) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (671453) DHT_SENSOR: Humidity: 76.7%, Temp: 29.7C[0m
+[0;32mI (672173) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (672653) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (672653) LED_TASK: Received: �m�?���?,��
+[0;31mE (672653) LED_TASK: Failed to parse JSON.[0m
+[0;31mE (672653) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2880[0m
+[0;32mI (672663) esp-tls-mbedtls: Certificate verified.[0m
+[0;31mE (672673) esp-tls: Failed to open new connection[0m
+[0;31mE (672673) transport_base: Failed to open a new connection[0m
+[0;31mE (672693) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (672693) HTTP_CLIENT: Failed to upload BH1750 data.[0m
+[0;32mI (673343) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.6999969482422,"temperature":29.700000762939453}[0m
+[0;32mI (673343) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (673693) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (674383) DHT_SENSOR: Humidity: 76.7%, Temp: 29.7C[0m
+[0;31mE (674903) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (674903) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (674903) esp-tls: Failed to open new connection[0m
+[0;31mE (674913) transport_base: Failed to open a new connection[0m
+[0;31mE (674923) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (674923) HTTP_CLIENT: Failed to upload DHT data.[0m
+[0;32mI (675493) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (675493) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (675953) DHT_SENSOR: Humidity: 76.7%, Temp: 29.7C[0m
+[0;32mI (676313) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (676313) LED_TASK: Received: ���?���?p[�
+[0;31mE (676313) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (676523) BH1750_SENSOR: Light Intensity: 1 lux[0m
+[0;32mI (677593) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.6999969482422,"temperature":29.700000762939453}[0m
+[0;32mI (677593) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (678263) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":1}[0m
+[0;32mI (678263) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (678623) DHT_SENSOR: Humidity: 76.6%, Temp: 29.7C[0m
+[0;32mI (679273) BH1750_SENSOR: Light Intensity: 1 lux[0m
+[0;32mI (680173) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (680173) LED_TASK: Received: ls�?��?���[0m
+[0;31mE (680173) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (680633) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.5999984741211,"temperature":29.700000762939453}[0m
+[0;32mI (680633) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (681533) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":1}[0m
+[0;32mI (681543) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (681693) DHT_SENSOR: Humidity: 76.6%, Temp: 29.8C[0m
+[0;32mI (682563) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;31mE (682713) esp-tls-mbedtls: mbedtls_ssl_setup returned -0x7F00[0m
+[0;31mE (682713) esp-tls: create_ssl_handle failed[0m
+[0;31mE (682713) esp-tls: Failed to open new connection[0m
+[0;31mE (682713) transport_base: Failed to open a new connection[0m
+[0;31mE (682723) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (682733) HTTP_CLIENT: Failed to upload BH1750 data.[0m
+[0;32mI (683483) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.5999984741211,"temperature":29.799999237060547}[0m
+[0;32mI (683483) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (683733) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (683753) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (683753) LED_TASK: Received: ���?���?4��
+[0;31mE (683753) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (684523) DHT_SENSOR: Humidity: 76.7%, Temp: 29.8C[0m
+[0;32mI (685443) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (685443) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (686253) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.6999969482422,"temperature":29.799999237060547}[0m
+[0;32mI (686253) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (686473) BH1750_SENSOR: Light Intensity: 1 lux[0m
+[0;32mI (687293) DHT_SENSOR: Humidity: 76.7%, Temp: 29.8C[0m
+[0;32mI (687443) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (687443) LED_TASK: Received: ���?���?���
+[0;31mE (687443) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (688213) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":1}[0m
+[0;32mI (688213) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (689243) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (689313) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.6999969482422,"temperature":29.799999237060547}[0m
+[0;32mI (689313) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (690363) DHT_SENSOR: Humidity: 76.6%, Temp: 29.7C[0m
+[0;32mI (691523) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (691523) LED_TASK: Received: ��?���?[0m
+[0;31mE (691533) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (692703) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (692703) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (693013) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.5999984741211,"temperature":29.700000762939453}[0m
+[0;32mI (693013) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (693713) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;31mE (694043) dht: HIGH bit timeout[0m
+[0;31mE (694043) DHT_SENSOR: Failed to read DHT sensor.[0m
+[0;32mI (695063) DHT_SENSOR: Humidity: 76.6%, Temp: 29.8C[0m
+[0;32mI (695093) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (695093) LED_TASK: Received: ��?���?,��
+[0;31mE (695093) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (695403) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (695403) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (696403) BH1750_SENSOR: Light Intensity: 1 lux[0m
+[0;32mI (696593) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.5999984741211,"temperature":29.799999237060547}[0m
+[0;32mI (696593) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (697623) DHT_SENSOR: Humidity: 76.6%, Temp: 29.8C[0m
+[0;32mI (697923) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":1}[0m
+[0;32mI (697923) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (698743) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (698743) LED_TASK: Received: ,��?��?���[0m
+[0;31mE (698743) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (698933) BH1750_SENSOR: Light Intensity: 1 lux[0m
+[0;32mI (699103) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.5999984741211,"temperature":29.799999237060547}[0m
+[0;32mI (699103) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (700133) DHT_SENSOR: Humidity: 76.6%, Temp: 29.8C[0m
+[0;32mI (700483) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":1}[0m
+[0;32mI (700483) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (701493) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (701713) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.5999984741211,"temperature":29.799999237060547}[0m
+[0;32mI (701713) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (702223) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (702223) LED_TASK: Received: ���?���?���
+[0;31mE (702223) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (702743) DHT_SENSOR: Humidity: 76.7%, Temp: 29.7C[0m
+[0;32mI (703153) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (703163) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (704183) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (704373) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.6999969482422,"temperature":29.700000762939453}[0m
+[0;32mI (704373) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (705413) DHT_SENSOR: Humidity: 76.7%, Temp: 29.7C[0m
+[0;31mE (705553) esp-tls-mbedtls: mbedtls_ssl_setup returned -0x7F00[0m
+[0;31mE (705563) esp-tls: create_ssl_handle failed[0m
+[0;31mE (705563) esp-tls: Failed to open new connection[0m
+[0;31mE (705563) transport_base: Failed to open a new connection[0m
+[0;31mE (705573) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (705573) HTTP_CLIENT: Failed to upload DHT data.[0m
+[0;32mI (705923) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (705923) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (705923) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (705933) LED_TASK: Received: ���?���?���
+[0;31mE (705943) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (706603) DHT_SENSOR: Humidity: 76.7%, Temp: 29.7C[0m
+[0;32mI (706933) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;31mE (708073) esp-tls-mbedtls: mbedtls_ssl_setup returned -0x7F00[0m
+[0;31mE (708083) esp-tls: create_ssl_handle failed[0m
+[0;31mE (708083) esp-tls: Failed to open new connection[0m
+[0;31mE (708083) transport_base: Failed to open a new connection[0m
+[0;31mE (708093) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (708093) LED_TASK: HTTP GET request failed.[0m
+[0;32mI (708373) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.6999969482422,"temperature":29.700000762939453}[0m
+[0;32mI (708373) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (708683) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (708683) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (709413) DHT_SENSOR: Humidity: 76.7%, Temp: 29.8C[0m
+[0;32mI (709693) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;31mE (710233) esp-tls-mbedtls: mbedtls_ssl_setup returned -0x7F00[0m
+[0;31mE (710233) esp-tls: create_ssl_handle failed[0m
+[0;31mE (710233) esp-tls: Failed to open new connection[0m
+[0;31mE (710233) transport_base: Failed to open a new connection[0m
+[0;31mE (710243) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (710253) LED_TASK: HTTP GET request failed.[0m
+[0;32mI (711183) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.6999969482422,"temperature":29.799999237060547}[0m
+[0;32mI (711183) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (711543) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (711543) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (712213) DHT_SENSOR: Humidity: 76.7%, Temp: 29.7C[0m
+[0;32mI (712553) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;31mE (712683) esp-tls-mbedtls: mbedtls_ssl_setup returned -0x7F00[0m
+[0;31mE (712683) esp-tls: create_ssl_handle failed[0m
+[0;31mE (712683) esp-tls: Failed to open new connection[0m
+[0;31mE (712683) transport_base: Failed to open a new connection[0m
+[0;31mE (712693) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (712703) HTTP_CLIENT: Failed to upload BH1750 data.[0m
+[0;32mI (713703) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;31mE (713823) esp-tls-mbedtls: mbedtls_ssl_setup returned -0x7F00[0m
+[0;31mE (713823) esp-tls: create_ssl_handle failed[0m
+[0;31mE (713823) esp-tls: Failed to open new connection[0m
+[0;31mE (713823) transport_base: Failed to open a new connection[0m
+[0;31mE (713833) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (713843) HTTP_CLIENT: Failed to upload BH1750 data.[0m
+[0;32mI (714003) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (714003) LED_TASK: Received: ���?���?���
+[0;31mE (714003) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (714023) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.6999969482422,"temperature":29.700000762939453}[0m
+[0;32mI (714023) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (714843) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (715053) DHT_SENSOR: Humidity: 76.7%, Temp: 29.8C[0m
+[0;32mI (717193) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (717193) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (717623) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.6999969482422,"temperature":29.799999237060547}[0m
+[0;32mI (717623) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (718203) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (718663) DHT_SENSOR: Humidity: 76.7%, Temp: 29.7C[0m
+[0;31mE (718863) esp-tls-mbedtls: mbedtls_ssl_setup returned -0x7F00[0m
+[0;31mE (718883) esp-tls: create_ssl_handle failed[0m
+[0;31mE (718883) esp-tls: Failed to open new connection[0m
+[0;31mE (718883) transport_base: Failed to open a new connection[0m
+[0;32mI (718903) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (718903) LED_TASK: Received: ��?���?H_�
+[0;31mE (718903) LED_TASK: Failed to parse JSON.[0m
+[0;31mE (718913) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (718913) HTTP_CLIENT: Failed to upload DHT data.[0m
+[0;32mI (719933) DHT_SENSOR: Humidity: 76.7%, Temp: 29.7C[0m
+[0;32mI (719953) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (719953) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (720963) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;31mE (721383) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x3B00[0m
+[0;32mI (721393) esp-tls-mbedtls: Certificate verified.[0m
+[0;31mE (721393) esp-tls: Failed to open new connection[0m
+[0;31mE (721393) transport_base: Failed to open a new connection[0m
+[0;31mE (721403) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (721403) LED_TASK: HTTP GET request failed.[0m
+[0;32mI (721423) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.6999969482422,"temperature":29.700000762939453}[0m
+[0;32mI (721423) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;31mE (721793) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x3B00[0m
+[0;32mI (721793) esp-tls-mbedtls: Certificate verified.[0m
+[0;31mE (721793) esp-tls: Failed to open new connection[0m
+[0;31mE (721793) transport_base: Failed to open a new connection[0m
+[0;31mE (721803) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (721813) HTTP_CLIENT: Failed to upload BH1750 data.[0m
+[0;32mI (722453) DHT_SENSOR: Humidity: 76.7%, Temp: 29.8C[0m
+[0;32mI (722813) BH1750_SENSOR: Light Intensity: 1 lux[0m
+[0;33mW (728833) esp-tls: Failed to open new connection in specified timeout[0m
+[0;31mE (728833) transport_base: Failed to open a new connection[0m
+[0;31mE (728843) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (728843) LED_TASK: HTTP GET request failed.[0m
+[0;31mE (729293) transport_base: esp_tls_conn_write error, errno=No more processes[0m
+[0;31mE (729293) HTTP_CLIENT: Error write request[0m
+[0;31mE (729293) HTTP_CLIENT: Failed to upload DHT data.[0m
+[0;33mW (729793) esp-tls: Failed to open new connection in specified timeout[0m
+[0;31mE (729793) transport_base: Failed to open a new connection[0m
+[0;31mE (729793) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (729793) HTTP_CLIENT: Failed to upload BH1750 data.[0m
+[0;32mI (730313) DHT_SENSOR: Humidity: 76.7%, Temp: 29.7C[0m
+[0;32mI (730823) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;31mE (736793) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2880[0m
+[0;31mE (736793) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2880[0m
+[0;32mI (736793) esp-tls-mbedtls: Certificate verified.[0m
+[0;32mI (736793) esp-tls-mbedtls: Certificate verified.[0m
+[0;31mE (736793) esp-tls: Failed to open new connection[0m
+[0;31mE (736803) esp-tls: Failed to open new connection[0m
+[0;31mE (736813) transport_base: Failed to open a new connection[0m
+[0;31mE (736813) transport_base: Failed to open a new connection[0m
+[0;31mE (736823) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (736833) HTTP_CLIENT: Failed to upload BH1750 data.[0m
+[0;31mE (736833) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (736843) LED_TASK: HTTP GET request failed.[0m
+[0;33mW (737293) esp-tls: Failed to open new connection in specified timeout[0m
+[0;31mE (737293) transport_base: Failed to open a new connection[0m
+[0;31mE (737293) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (737293) HTTP_CLIENT: Failed to upload DHT data.[0m
+[0;32mI (737833) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (738333) DHT_SENSOR: Humidity: 76.7%, Temp: 29.7C[0m
+[0;31mE (738973) esp-tls-mbedtls: mbedtls_ssl_setup returned -0x7F00[0m
+[0;31mE (738983) esp-tls: create_ssl_handle failed[0m
+[0;31mE (738983) esp-tls: Failed to open new connection[0m
+[0;31mE (738983) transport_base: Failed to open a new connection[0m
+[0;31mE (738993) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (738993) LED_TASK: HTTP GET request failed.[0m
+[0;32mI (739603) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (739603) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (739963) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.6999969482422,"temperature":29.700000762939453}[0m
+[0;32mI (739963) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (740613) BH1750_SENSOR: Light Intensity: 1 lux[0m
+[0;31mE (740993) dht: HIGH bit timeout[0m
+[0;31mE (740993) DHT_SENSOR: Failed to read DHT sensor.[0m
+[0;32mI (742013) DHT_SENSOR: Humidity: 76.8%, Temp: 29.7C[0m
+[0;32mI (742163) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":1}[0m
+[0;32mI (742163) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (742533) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (742543) LED_TASK: Received: ���?���?H_�
+[0;31mE (742543) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (743163) BH1750_SENSOR: Light Intensity: 1 lux[0m
+[0;32mI (744043) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.8000030517578,"temperature":29.700000762939453}[0m
+[0;32mI (744043) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (744923) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":1}[0m
+[0;32mI (744933) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (745103) DHT_SENSOR: Humidity: 76.8%, Temp: 29.7C[0m
+[0;32mI (745953) BH1750_SENSOR: Light Intensity: 1 lux[0m
+[0;31mE (746143) esp-tls-mbedtls: mbedtls_ssl_setup returned -0x7F00[0m
+[0;31mE (746153) esp-tls: create_ssl_handle failed[0m
+[0;31mE (746153) esp-tls: Failed to open new connection[0m
+[0;31mE (746153) transport_base: Failed to open a new connection[0m
+[0;32mI (746153) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (746173) LED_TASK: Received: l=�?��?8��[0m
+[0;31mE (746173) LED_TASK: Failed to parse JSON.[0m
+[0;31mE (746193) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (746193) HTTP_CLIENT: Failed to upload BH1750 data.[0m
+[0;32mI (746873) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.8000030517578,"temperature":29.700000762939453}[0m
+[0;32mI (746873) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (747193) BH1750_SENSOR: Light Intensity: 1 lux[0m
+[0;32mI (747913) DHT_SENSOR: Humidity: 76.9%, Temp: 29.7C[0m
+[0;31mE (748523) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (748523) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (748523) esp-tls: Failed to open new connection[0m
+[0;31mE (748533) transport_base: Failed to open a new connection[0m
+[0;31mE (748553) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (748553) HTTP_CLIENT: Failed to upload DHT data.[0m
+[0;32mI (748923) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":1}[0m
+[0;32mI (748923) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (749573) DHT_SENSOR: Humidity: 76.8%, Temp: 29.7C[0m
+[0;32mI (749683) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (749683) LED_TASK: Received: ���?���?���
+[0;31mE (749683) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (749923) BH1750_SENSOR: Light Intensity: 1 lux[0m
+[0;32mI (751373) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.8000030517578,"temperature":29.700000762939453}[0m
+[0;32mI (751373) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (751693) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":1}[0m
+[0;32mI (751693) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (752413) DHT_SENSOR: Humidity: 76.8%, Temp: 29.7C[0m
+[0;32mI (752703) BH1750_SENSOR: Light Intensity: 1 lux[0m
+[0;31mE (752843) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (752853) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (752853) esp-tls: Failed to open new connection[0m
+[0;31mE (752853) transport_base: Failed to open a new connection[0m
+[0;31mE (752863) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (752863) HTTP_CLIENT: Failed to upload DHT data.[0m
+[0;32mI (753423) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (753423) LED_TASK: Received: ���?���?���
+[0;31mE (753423) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (753893) DHT_SENSOR: Humidity: 76.8%, Temp: 29.7C[0m
+[0;32mI (754243) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":1}[0m
+[0;32mI (754243) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (755253) BH1750_SENSOR: Light Intensity: 1 lux[0m
+[0;32mI (755373) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.8000030517578,"temperature":29.700000762939453}[0m
+[0;32mI (755373) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (756403) DHT_SENSOR: Humidity: 76.8%, Temp: 29.7C[0m
+[0;31mE (756523) esp-tls-mbedtls: mbedtls_ssl_setup returned -0x7F00[0m
+[0;31mE (756533) esp-tls: create_ssl_handle failed[0m
+[0;31mE (756533) esp-tls: Failed to open new connection[0m
+[0;31mE (756533) transport_base: Failed to open a new connection[0m
+[0;31mE (756543) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (756543) HTTP_CLIENT: Failed to upload DHT data.[0m
+[0;32mI (756853) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":1}[0m
+[0;32mI (756863) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (757113) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (757113) LED_TASK: Received: |��?��?h��[0m
+[0;31mE (757113) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (757573) DHT_SENSOR: Humidity: 76.8%, Temp: 29.7C[0m
+[0;32mI (757863) BH1750_SENSOR: Light Intensity: 1 lux[0m
+[0;32mI (759203) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.8000030517578,"temperature":29.700000762939453}[0m
+[0;32mI (759203) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (759583) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":1}[0m
+[0;32mI (759583) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (760233) DHT_SENSOR: Humidity: 76.8%, Temp: 29.7C[0m
+[0;32mI (760583) BH1750_SENSOR: Light Intensity: 1 lux[0m
+[0;32mI (760633) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (760633) LED_TASK: Received: ��?���?̲�
+[0;31mE (760633) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (762023) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.8000030517578,"temperature":29.700000762939453}[0m
+[0;32mI (762033) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (762343) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":1}[0m
+[0;32mI (762343) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;31mE (763063) dht: HIGH bit timeout[0m
+[0;31mE (763063) DHT_SENSOR: Failed to read DHT sensor.[0m
+[0;32mI (763343) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (764093) DHT_SENSOR: Humidity: 76.8%, Temp: 29.7C[0m
+[0;32mI (764143) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (764143) LED_TASK: Received: d�?��?0��[0m
+[0;31mE (764143) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (765113) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (765113) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (766023) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.8000030517578,"temperature":29.700000762939453}[0m
+[0;32mI (766023) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (766143) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (767053) DHT_SENSOR: Humidity: 76.8%, Temp: 29.7C[0m
+[0;31mE (767183) esp-tls-mbedtls: mbedtls_ssl_setup returned -0x7F00[0m
+[0;31mE (767183) esp-tls: create_ssl_handle failed[0m
+[0;31mE (767183) esp-tls: Failed to open new connection[0m
+[0;31mE (767183) transport_base: Failed to open a new connection[0m
+[0;31mE (767193) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (767203) HTTP_CLIENT: Failed to upload DHT data.[0m
+[0;32mI (767963) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (767963) LED_TASK: Received: 0��?��?H��[0m
+[0;31mE (767963) LED_TASK: 'state' not found or invalid in the JSON.[0m
+[0;32mI (767983) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (767983) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (768223) DHT_SENSOR: Humidity: 76.7%, Temp: 29.7C[0m
+[0;32mI (769013) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (770003) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.6999969482422,"temperature":29.700000762939453}[0m
+[0;32mI (770003) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (770733) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (770733) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (771043) DHT_SENSOR: Humidity: 76.7%, Temp: 29.8C[0m
+[0;32mI (771553) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (771553) LED_TASK: Received: �m�?���?̜�
+[0;31mE (771553) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (771763) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (772833) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.6999969482422,"temperature":29.799999237060547}[0m
+[0;32mI (772833) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (773493) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (773493) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (773863) DHT_SENSOR: Humidity: 76.7%, Temp: 29.8C[0m
+[0;32mI (774503) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;31mE (774713) esp-tls-mbedtls: mbedtls_ssl_setup returned -0x7F00[0m
+[0;31mE (774713) esp-tls: create_ssl_handle failed[0m
+[0;31mE (774713) esp-tls: Failed to open new connection[0m
+[0;31mE (774713) transport_base: Failed to open a new connection[0m
+[0;31mE (774753) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (774753) HTTP_CLIENT: Failed to upload BH1750 data.[0m
+[0;32mI (775133) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (775133) LED_TASK: Received: $��?��?���[0m
+[0;31mE (775133) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (775643) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.6999969482422,"temperature":29.799999237060547}[0m
+[0;32mI (775643) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (775753) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (776673) DHT_SENSOR: Humidity: 76.7%, Temp: 29.7C[0m
+[0;31mE (777263) esp-tls-mbedtls: mbedtls_ssl_setup returned -0x7F00[0m
+[0;31mE (777263) esp-tls: create_ssl_handle failed[0m
+[0;31mE (777263) esp-tls: Failed to open new connection[0m
+[0;31mE (777263) transport_base: Failed to open a new connection[0m
+[0;31mE (777273) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (777273) LED_TASK: HTTP GET request failed.[0m
+[0;32mI (777303) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (777303) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (778303) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.6999969482422,"temperature":29.700000762939453}[0m
+[0;32mI (778313) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (778323) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;31mE (779343) dht: HIGH bit timeout[0m
+[0;31mE (779343) DHT_SENSOR: Failed to read DHT sensor.[0m
+[0;32mI (779943) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (779943) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (780363) DHT_SENSOR: Humidity: 76.6%, Temp: 29.7C[0m
+[0;32mI (780773) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (780773) LED_TASK: Received: ���?���?,��
+[0;31mE (780773) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (780973) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (782043) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.5999984741211,"temperature":29.700000762939453}[0m
+[0;32mI (782043) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (782713) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (782713) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (783073) DHT_SENSOR: Humidity: 76.6%, Temp: 29.7C[0m
+[0;32mI (783723) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;31mE (783913) esp-tls-mbedtls: mbedtls_ssl_setup returned -0x7F00[0m
+[0;31mE (783933) esp-tls: create_ssl_handle failed[0m
+[0;31mE (783933) esp-tls: Failed to open new connection[0m
+[0;31mE (783933) transport_base: Failed to open a new connection[0m
+[0;31mE (783953) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (783953) HTTP_CLIENT: Failed to upload BH1750 data.[0m
+[0;32mI (784353) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"state":1}[0m
+[0;32mI (784353) LED_TASK: Received: ls�?��?,��[0m
+[0;31mE (784353) LED_TASK: Failed to parse JSON.[0m
+[0;32mI (784863) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.5999984741211,"temperature":29.700000762939453}[0m
+[0;32mI (784863) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (784953) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;32mI (785893) DHT_SENSOR: Humidity: 76.6%, Temp: 29.7C[0m
+[0;31mE (786473) esp-tls-mbedtls: mbedtls_ssl_setup returned -0x7F00[0m
+[0;31mE (786483) esp-tls: create_ssl_handle failed[0m
+[0;31mE (786483) esp-tls: Failed to open new connection[0m
+[0;31mE (786483) transport_base: Failed to open a new connection[0m
+[0;31mE (786493) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (786493) LED_TASK: HTTP GET request failed.[0m
+[0;32mI (786513) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (786513) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (787523) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"humidity":76.5999984741211,"temperature":29.700000762939453}[0m
+[0;32mI (787533) HTTP_CLIENT: DHT data uploaded successfully.[0m
+[0;32mI (787543) BH1750_SENSOR: Light Intensity: 0 lux[0m
+[0;31mE (788563) dht: HIGH bit timeout[0m
+[0;31mE (788563) DHT_SENSOR: Failed to read DHT sensor.[0m
+[0;32mI (789063) HTTP_CLIENT: HTTP_EVENT_ON_DATA: {"light_intensity":0}[0m
+[0;32mI (789063) HTTP_CLIENT: BH1750 data uploaded successfully.[0m
+[0;32mI (789583) DHT_SENSOR: Humidity: 76.6%, Temp: 29.8C[0m
+k���	�����state: run -> init (0x2c0)
+[0;32mI (873) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;31mE (873) WiFi: Disconnected. Reconnecting...[0m
+[0;31mE (3283) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (3303) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3303) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (3313) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (3323) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (3343) wifi:connected with MrBlack, aid = 18, channel 6, BW20, bssid = b2:62:8b:e1:b1:38[0m
+[0;32mI (3343) wifi:security: WPA2-PSK, phy: bgn, rssi: -53[0m
+[0;32mI (3353) wifi:pm start, type: 1[0m
+
+[0;32mI (3353) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3353) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (3373) wifi:<ba-add>idx:0 (ifx:0, b2:62:8b:e1:b1:38), tid:5, ssn:2, winSize:64[0m
+[0;32mI (4363) esp_netif_handlers: sta ip: 192.168.0.96, mask: 255.255.255.0, 

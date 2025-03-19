@@ -1,0 +1,5 @@
+[1/4] cmd.exe /C "cd /D "D:\Academic year5\Semester1\Student_Project\ESP_IDF\https_firebase_testing\build\esp-idf\esptool_py" && d:\esp\tools\python_env\idf5.3_py3.11_env\Scripts\python.exe D:/esp/esp-idf/v5.3/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app "D:/Academic year5/Semester1/Student_Project/ESP_IDF/https_firebase_testing/build/partition_table/partition-table.bin" "D:/Academic year5/Semester1/Student_Project/ESP_IDF/https_firebase_testing/build/https_firebase_testing.bin""
+https_firebase_testing.bin binary size 0xea950 bytes. Smallest app partition is 0x100000 bytes. 0x156b0 bytes (8%) free.
+[2/4] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D "D:\Academic year5\Semester1\Student_Project\ESP_IDF\https_firebase_testing\build\bootloader\esp-idf\esptool_py" && d:\esp\tools\python_env\idf5.3_py3.11_env\Scripts\python.exe D:/esp/esp-idf/v5.3/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 "D:/Academic year5/Semester1/Student_Project/ESP_IDF/https_firebase_testing/build/bootloader/bootloader.bin""
+Bootloader binary size 0x6880 bytes. 0x780 bytes (7%) free.

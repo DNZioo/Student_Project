@@ -1,0 +1,86 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D "D:\Academic year5\Semester1\Student_Project\ESP_IDF\https_firebase_testing\build\bootloader\esp-idf\esptool_py" && d:\esp\tools\python_env\idf5.3_py3.11_env\Scripts\python.exe D:/esp/esp-idf/v5.3/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 "D:/Academic year5/Semester1/Student_Project/ESP_IDF/https_firebase_testing/build/bootloader/bootloader.bin""
+Bootloader binary size 0x6880 bytes. 0x780 bytes (7%) free.
+[2/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+[3/8] Linking C static library esp-idf\main\libmain.a
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable https_firebase_testing.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated D:/Academic year5/Semester1/Student_Project/ESP_IDF/https_firebase_testing/build/https_firebase_testing.bin
+[7/8] cmd.exe /C "cd /D "D:\Academic year5\Semester1\Student_Project\ESP_IDF\https_firebase_testing\build\esp-idf\esptool_py" && d:\esp\tools\python_env\idf5.3_py3.11_env\Scripts\python.exe D:/esp/esp-idf/v5.3/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app "D:/Academic year5/Semester1/Student_Project/ESP_IDF/https_firebase_testing/build/partition_table/partition-table.bin" "D:/Academic year5/Semester1/Student_Project/ESP_IDF/https_firebase_testing/build/https_firebase_testing.bin""
+https_firebase_testing.bin binary size 0xeece0 bytes. Smallest app partition is 0x100000 bytes. 0x11320 bytes (7%) free.
+[7/8] cmd.exe /C "cd /D D:\esp\esp-idf\v5.3\esp-idf\components\esptool_py && D:\esp\tools\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=D:/esp/esp-idf/v5.3/esp-idf -D SERIAL_TOOL=d:/esp/tools/python_env/idf5.3_py3.11_env/Scripts/python.exe;;D:/esp/esp-idf/v5.3/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;wriesptool.py --chip esp32 -p COM8 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 https_firebase_testing.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.1
+Serial port COM8
+Connecting....
+Chip is ESP32-D0WD (revision v1.0)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 4c:11:ae:65:b6:10
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000fefff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 26752 bytes to 16373...
+Writing at 0x00001000... (100 %)
+Wrote 26752 bytes (16373 compressed) at 0x00001000 in 0.6 seconds (effective 362.8 kbit/s)...
+Hash of data verified.
+Compressed 978144 bytes to 612333...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001d515... (5 %)
+Writing at 0x0002777b... (7 %)
+Writing at 0x0002d273... (10 %)
+Writing at 0x00032ada... (13 %)
+Writing at 0x0003eaaa... (15 %)
+Writing at 0x0004480d... (18 %)
+Writing at 0x0004a941... (21 %)
+Writing at 0x00050690... (23 %)
+Writing at 0x000562d8... (26 %)
+Writing at 0x0005c244... (28 %)
+Writing at 0x00061d9f... (31 %)
+Writing at 0x000684d1... (34 %)
+Writing at 0x0006d5f6... (36 %)
+Writing at 0x00072ab4... (39 %)
+Writing at 0x00077fad... (42 %)
+Writing at 0x0007d379... (44 %)
+Writing at 0x00082a60... (47 %)
+Writing at 0x00088320... (50 %)
+Writing at 0x0008e34b... (52 %)
+Writing at 0x00093c93... (55 %)
+Writing at 0x0009972d... (57 %)
+Writing at 0x0009f362... (60 %)
+Writing at 0x000a5030... (63 %)
+Writing at 0x000aa892... (65 %)
+Writing at 0x000b06bc... (68 %)
+Writing at 0x000b6c2d... (71 %)
+Writing at 0x000bc774... (73 %)
+Writing at 0x000c2233... (76 %)
+Writing at 0x000c7e37... (78 %)
+Writing at 0x000cd217... (81 %)
+Writing at 0x000d4be3... (84 %)
+Writing at 0x000dfa98... (86 %)
+Writing at 0x000e5bc4... (89 %)
+Writing at 0x000eb98c... (92 %)
+Writing at 0x000f138d... (94 %)
+Writing at 0x000f7716... (97 %)
+Writing at 0x000fc962... (100 %)
+Wrote 978144 bytes (612333 compressed) at 0x00010000 in 14.1 seconds (effective 555.5 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 842.7 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+te_flash;@flash_args -D "WORKING_DIRECTORY=D:/Academic year5/Semester1/Student_Project/ESP_IDF/https_firebase_testing/build" -P D:/esp/esp-idf/v5.3/esp-idf/components/esptool_py/run_serial_tool.cmake"
